@@ -3,6 +3,8 @@ const exerciseClick = document.getElementById("exerciseClick");
 const slumberClick = document.getElementById("slumberClick");
 const yogaClick = document.getElementById("yogaClick");
 
+const loginHeader = document.getElementById("login-header");
+
 //eventually want to get calories count from diet page (with export
 const calorieCount = 0;
 const calorieHeader = document.getElementById("calories-header");
