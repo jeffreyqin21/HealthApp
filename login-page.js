@@ -1,7 +1,6 @@
 const user = document.getElementById("userInput");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
-export {user};
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = user.username.value;
