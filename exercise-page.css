@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+    body {
+      background-color: #87ceeb;
+    }
+
+    .center {
+        position:absolute;
+        bottom:0px;
+    
+    }
+
+  }
+
+
