@@ -18,12 +18,12 @@ h1{
 h2{
     font-family: 'Lato', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 @media (max-width: 600px) {
     body {
-      background-color: #87ceeb;
+      background-color: pink;
     }
   }
 
