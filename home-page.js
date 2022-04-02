@@ -6,13 +6,15 @@ const quote = document.getElementById("quote");
 const newQuote = document.getElementById("newQuote");
 const fact = document.getElementById("fact");
 const newFact = document.getElementById("newFact");
+const timer = document.getElementById("gameStart");
 
 
 let a = Math.round(Math.random() * 3 + 1);
 let y = Math.round(Math.random() * 5 + 1)
+let time = 60;
 
 if(a == 1)
-    quote.innerHTML = "\"It always seems impossible until it's done.\" - Nelson Mandela";
+    quote.innerHTML = "\"It always seems impossible until it's done.\" -Nelson Mandela";
 if(a == 2)
     quote.innerHTML = "\"If you can dream it, you can do it.\" -Walt Disney";
 if(a == 3)
@@ -69,6 +71,22 @@ newFact.addEventListener("click", (e) => {
         fact.innerHTML = "Workouts can improve the look of your skin?";
     
 })
+
+document.getElementById("gameStart").addEventListener("click", function(){
+    var timeleft = 60;
+
+    var downloadTimer = setInterval(function function1(){
+    document.getElementById("countdown").innerHTML = timeleft + " (Breathe in for 4, Hold for 3, Breathe Out for 3)";
+
+    timeleft -= 1;
+    if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "Good Job!"
+    }
+    }, 1000);
+
+    console.log(countdown);
+});
 
 
 dietClick.addEventListener("click", (e) => {

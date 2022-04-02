@@ -16,7 +16,14 @@
         
         <h2 id ="fact-header">Did you know that...</h2>
         <h3 id = "fact"> </h3>
-        <button type = "button" id = "newFact">Click for a new quote</button>
+        <button type = "button" id = "newFact">Click for a new fact</button>
+
+        <h2 id ="mind-header">Begin a mindfulness session?</h2>
+        <h3 id= "countdown">60 (Breathe in for 4, Hold for 3, Breathe Out for 3)</h3>
+        <button type = "button" id = "gameStart">Start Timer</button>
+        
+        <h1 id="end-header">Enjoy your day!</h1>
+
         <body>
             <div class="center">
                
@@ -34,5 +41,18 @@
 </body>
 
 </html>
+
+<script>
+    let cTime = 120;
+    function myTimer(){
+    if(cTime == 0){
+    document.getElementById("countdown").innerHTML = "Resend code";
+    } else{
+    document.getElementById("countdown").innerHTML = cTime;
+    cTime = cTime - 1;
+    setTimeout(myTimer, 1000);
+  }
+}
+</script>
 
 
