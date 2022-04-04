@@ -18,7 +18,7 @@
 body {
   overflow-y: none;
   width: 100%;
-  background-color: blanchedalmond;
+  background-color: rgb(233, 231, 231);
 }
 h1 {
     font-family: 'Lato-Light';
@@ -26,6 +26,7 @@ h1 {
     justify-content: center;
     display: flex;
     position: static;
+    color: rgb(80, 77, 77);
     text-decoration:underline;
     text-decoration-thickness: .2rem;
     text-underline-offset: 3px;
