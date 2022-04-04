@@ -1,37 +1,25 @@
+
+@media screen and (max-width: 540px) {
+    .view {
+        width: 400px;
+    }
+}
+
 @font-face {
-    font-family: "Lato";
-    src: url('698242188-Lato-Bla.eot');
-    src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'),
-    url('698242188-Lato-Bla.svg#Lato Black') format('svg'),
-    url('698242188-Lato-Bla.woff') format('woff'),
-    url('698242188-Lato-Bla.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Lato';
     font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/Lato-Regular.ttf');
+}
+body {
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
 }
 
-h1{
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    justify-content: center;
+h1 {
+    font-family: 'Lato';
     align-items: center;
+    margin-left:20rem;
 }
-h2{
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-@media (max-width: 600px) {
-    body {
-      background-color: pink;
-    }
-  }
-
-  
-    .center {
-        position:absolute;
-        bottom:0px;
-    
-    }
-
-
