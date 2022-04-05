@@ -73,11 +73,16 @@ newFact.addEventListener("click", (e) => {
 })
 
 document.getElementById("gameStart").addEventListener("click", function(){
-    var timeleft = 60;
+    var timeleft = 10;
 
     var downloadTimer = setInterval(function function1(){
-    document.getElementById("countdown").innerHTML = timeleft + " (Breathe in for 4, Hold for 3, Breathe Out for 3)";
-
+    var sectionTime = timeleft % 10;
+    if(sectionTime == 0 || sectionTime == 9 || sectionTime == 8 || sectionTime == 7 )
+        document.getElementById("countdown").innerHTML = timeleft + "s (Breathe IN)";
+    if(sectionTime == 6 || sectionTime == 5 || sectionTime == 4)
+        document.getElementById("countdown").innerHTML = timeleft + "s (HOLD Breath)";
+    if(sectionTime == 3 || sectionTime == 2 || sectionTime == 1)
+        document.getElementById("countdown").innerHTML = timeleft + "s (Breathe OUT)";
     timeleft -= 1;
     if(timeleft <= 0){
         clearInterval(downloadTimer);

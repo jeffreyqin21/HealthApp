@@ -14,8 +14,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 1px 1px 1px #ccc;
-    box-shadow: 0 0 1em 1em #ccc;
+   
 }
 h2{
     font-family: 'Lato', sans-serif;
