@@ -1,17 +1,16 @@
-const user = document.getElementById("userInput");
+const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
-const firstName;
+
 loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const username = user.username.value;
-    const password = user.password.value;
-    firstName = username;
-    if (username === "user" && password === "434") {
-        alert("You have successfully logged in.");
-        window.location = 'home.html';
-    } else {
-        loginErrorMsg.style.opacity = 1;
-    }
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if ((username === "Bob" || username === "Sally") && password === "434") {
+        alert("You have successfully logged in.");
+        window.location = 'home.html';
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
 })
-export {firstName};

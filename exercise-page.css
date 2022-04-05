@@ -20,7 +20,7 @@ body {
   width: 100%;
   background-color: rgb(233, 231, 231);
 }
-h1 {
+h1,p {
     font-family: 'Lato';
     font-size: 70px;
     justify-content: center;
@@ -33,7 +33,7 @@ h1 {
 
 h2 {
     font-family: 'Lato-Light';
-    font-size: 50px;
+    font-size: 40px;
     justify-content: center;
     display: flex;
     position: static;

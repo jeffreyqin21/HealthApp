@@ -1,8 +1,9 @@
 window.onload = main
 
+
 function main () {
  daily()
-
+ 
 
 }
 
@@ -11,6 +12,7 @@ function daily() {
     const d = new Date();
     let day = days[d.getDay()];
     document.getElementById("date").innerHTML = day + "'s Focus: ";
+
 
     switch (day) {
         case "Sunday":
@@ -32,7 +34,7 @@ function daily() {
             document.getElementById("focus").innerHTML = "HIIT";
             break;
         case "Saturday":
-            document.getElementById("focus").innerHTML = "Recovery";
+            document.getElementById("focus").innerHTML = "Rest";
             break;
     }
 }
