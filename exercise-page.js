@@ -32,7 +32,7 @@ function daily() {
             document.getElementById("focus").innerHTML = "HIIT";
             break;
         case "Saturday":
-            document.getElementById("focus").innerHTML = "Rest";
+            document.getElementById("focus").innerHTML = "Recovery";
             break;
     }
 }
