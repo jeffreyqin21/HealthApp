@@ -1,10 +1,31 @@
 window.onload = main
 
-
 function main () {
  daily()
- 
+ move()
 
+}
+
+
+function move() {
+    var i= 0;
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 0;
+    var id = setInterval(frame, 1000);
+
+
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width+=25;
+        elem.style.width = width + "%";
+      }
+    }
+  }
 }
 
 function daily() {

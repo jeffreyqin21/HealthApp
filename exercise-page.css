@@ -20,9 +20,9 @@ body {
   width: 100%;
   background-color: rgb(233, 231, 231);
 }
-h1,p {
+h1 {
     font-family: 'Lato';
-    font-size: 70px;
+    font-size: 60px;
     justify-content: center;
     display: flex;
     position: static;
@@ -53,3 +53,14 @@ h2 {
     margin-left: 45rem;
     margin-top: 50rem;
 }
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 50px;
+    background-color: green;
+  }
