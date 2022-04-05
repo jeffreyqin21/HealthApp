@@ -2,31 +2,25 @@ window.onload = main
 
 function main () {
  daily()
- move()
 
 }
 
 
-function move() {
-    var i= 0;
-  if (i == 0) {
-    i = 1;
+/* function move() {
     var elem = document.getElementById("myBar");
     var width = 0;
-    var id = setInterval(frame, 1000);
-
-
+    var id = setInterval(frame, 10);
     function frame() {
       if (width >= 100) {
         clearInterval(id);
-        i = 0;
       } else {
-        width+=25;
+        width += 1;
         elem.style.width = width + "%";
       }
     }
-  }
+  
 }
+*/
 
 function daily() {
     const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
