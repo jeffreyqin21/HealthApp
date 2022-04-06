@@ -2,14 +2,17 @@ html {
     height: 100%;
   }
   @font-face {
-    font-family: "Lato";
-    src: url('698242188-Lato-Bla.eot');
-    src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'),
-    url('698242188-Lato-Bla.svg#Lato Black') format('svg'),
-    url('698242188-Lato-Bla.woff') format('woff'),
-    url('698242188-Lato-Bla.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('./fonts/Lato-Light.ttf');
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('./fonts/Lato-Bold.ttf');
 }
   @media (max-width: 600px) {
     body {
@@ -23,7 +26,7 @@ html {
   body {
     height: 100%;
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     display: grid;
     justify-items: center;
     align-items: center;
@@ -50,7 +53,7 @@ html {
   }
   
   #login-error-msg {
-    width: 23%;
+    width: 70%;
     text-align: center;
     margin: 0;
     padding: 5px;
