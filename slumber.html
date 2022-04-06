@@ -1,0 +1,156 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-1scale=1.0">
+    <title>Slumber</title>
+    <link rel="stylesheet" href="slumber-page.css">
+    <script defer src="slumber-page.js"></script>
+    
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: "Lato";
+        }
+        .chartMenu {
+          width: 100vw;
+          height: 40px;
+          background: #1A1A1A;
+          color: rgba(255, 26, 104, 1);
+        }
+        .chartMenu p {
+          padding: 10px;
+          font-size: 20px;
+        }
+        /*page background*/
+        .chartCard { 
+          width: 100vw;
+          height: calc(100vh - 40px);
+          background: rgba(255, 26, 104, 0.2);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        /* graph outline and background*/
+        .chartBox {
+          width: 700px;
+          padding: 20px;
+          border-radius: 20px;
+          border: solid 3px rgba(255, 26, 104, 1);
+          background: white;
+        }
+      </style>
+
+</head>
+
+<body>
+    <main id="main-holder">
+        <h1 id="login-header">Sleep Tracking</h1>
+        <h2 id="chart-header"></h2>
+        <h2 id="exercise-header"></h2>
+
+        <body>
+              <div class="chartCard">
+                <div class="chartBox">
+                  <canvas id="sleepChart"></canvas>
+                </div>
+              </div>
+              <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script>
+              // setup
+              const labels =  ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+              const data = {
+                labels: labels,
+                datasets: [{
+                  label: 'Daily Sleep',
+                  data: [10, 6, 8, 3, 5, 9, 11],
+                  backgroundColor: [
+                    'rgba(255, 26, 104, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(0, 0, 0, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255, 26, 104, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(0, 0, 0, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              };
+          
+              // config 
+              const config = {
+                type: 'bar',
+                data,
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'User Sleep',
+                            padding: {
+                                top: 5,
+                                bottom: 10
+                            },
+                            color: "blue",
+                            font: {
+                                size: 30
+                            }
+                        }
+                    },
+                  scales: {
+                    xAxes: {
+                      title: {
+                        display: true,
+                        text: 'Day of the Week',
+                        font: {
+                            size: 15
+                        }
+                      }
+                    },
+                    yAxes: {
+                      title: {
+                      display: true,
+                      text: 'Daily Sleep (in hours)',
+                      font: {
+                            size: 15
+                        }
+                      }
+                    },
+                  }
+                }
+              };
+          
+              // init </html>
+              const sleepChart = new Chart(
+                document.getElementById('sleepChart'),
+                config,
+              );
+              </script>
+          
+            </body> 
+            
+          <div class="center">
+               
+            <img src="icons/homeCurrent.png"  id = "homeClick" width="100" height="100">
+            <img src="icons/diet.png" id = "dietClick" width="100" height="100">
+            <img src="icons/exercise.png"  id = "exerciseClick" width="100" height="100">
+            <img src="icons/slumber.png" id = "slumberClick" width="100" height="100">
+
+          </div>
+        </body>
+
+
+    </main>
+</body>
+
+</html>
+
+
