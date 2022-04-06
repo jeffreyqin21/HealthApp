@@ -1,3 +1,4 @@
+
 const dietClick = document.getElementById("dietClick");
 const exerciseClick = document.getElementById("exerciseClick");
 const slumberClick = document.getElementById("slumberClick");
@@ -7,7 +8,9 @@ const newQuote = document.getElementById("newQuote");
 const fact = document.getElementById("fact");
 const newFact = document.getElementById("newFact");
 const timer = document.getElementById("gameStart");
+const nameTag = document.getElementById("login-header");
 
+nameTag.innerHTML = "Welcome" + document.cookie;
 
 let a = Math.round(Math.random() * 3 + 1);
 let y = Math.round(Math.random() * 5 + 1)
@@ -73,7 +76,7 @@ newFact.addEventListener("click", (e) => {
 })
 
 document.getElementById("gameStart").addEventListener("click", function(){
-    var timeleft = 10;
+    var timeleft = 60;
 
     var downloadTimer = setInterval(function function1(){
     var sectionTime = timeleft % 10;
