@@ -20,30 +20,39 @@ body {
   width: 100%;
   background-color: rgb(233, 231, 231);
 }
-h1,p {
-    font-family: 'Lato';
-    font-size: 70px;
-    justify-content: center;
-    display: flex;
-    position: static;
-    color: rgb(80, 77, 77);
-    margin-top: 0rem;
+
+#header {
+    background-color: darkblue;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
 
 }
 
-h2 {
+#focus {
+    font-family: 'Lato';
+    font-size: 60px;
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: white;
+    margin-top: 0rem;
+}
+
+#date {
     font-family: 'Lato-Light';
     font-size: 40px;
     justify-content: center;
     display: flex;
     position: static;
-    color: rgb(80, 77, 77);
+    color: beige;
     margin-bottom: .5rem;
-
-
+    margin-top: 0rem;
+    padding-top: .5rem;
 }
 
-#update {
+/* #update {
     font-family: 'Lato';
     font-size: 30px;
     background-color: rgb(232, 224, 224);
@@ -53,3 +62,21 @@ h2 {
     margin-left: 45rem;
     margin-top: 50rem;
 }
+    <input type="button" class="button" id="update" value="Start Workout">
+
+
+ #myProgress {
+    width: 100%;
+    background-color: grey;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 50px;
+    background-color: blue;
+  }
+
+  <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+  */
