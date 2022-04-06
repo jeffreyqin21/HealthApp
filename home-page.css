@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'Lato';
-    src: url('/fonts/Lato-Regular.ttf');
+    src: url('./fonts/Lato-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Lato-Light';
-    src: url('/fonts/Lato-Light.ttf');
+    src: url('./fonts/Lato-Light.ttf');
 }
 @font-face {
     font-family: 'Lato-Bold';
-    src: url('/fonts/Lato-Bold.ttf');
+    src: url('./fonts/Lato-Bold.ttf');
 }
 
 h1{
@@ -33,7 +33,6 @@ h3{
     align-items: center;
 }
 
-
 #header {
     background-color: darkblue;
     padding-top: 2rem;
@@ -46,7 +45,7 @@ h3{
     body {
       background-color: pink;
     
-      background: url(/icons/food.png) repeat 0 0;
+      background: url(./icons/food.png) repeat 0 0;
     
     }
   }

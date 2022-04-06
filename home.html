@@ -30,11 +30,10 @@
         <body>
             <div class="center">
                
-                <img src="icons/homeCurrent.png"  id = "homeClick" width="100" height="100">
-                <img src="icons/diet.png" id = "dietClick" width="100" height="100">
-                <img src="icons/exercise.png"  id = "exerciseClick" width="100" height="100">
-                <img src="icons/slumber.png" id = "slumberClick" width="100" height="100">
-                
+                <img src="icons/homeCurrent.png"  id = "homeClick" width="95" height="95">
+                <img src="icons/diet.png" id = "dietClick" width="95" height="95">
+                <img src="icons/exercise.png"  id = "exerciseClick" width="95" height="95">
+                <img src="icons/slumber.png" id = "slumberClick" width="95" height="95">
 
             </div>
         </body>
@@ -45,17 +44,5 @@
 
 </html>
 
-<script>
-    let cTime = 120;
-    function myTimer(){
-    if(cTime == 0){
-    document.getElementById("countdown").innerHTML = "Resend code";
-    } else{
-    document.getElementById("countdown").innerHTML = cTime;
-    cTime = cTime - 1;
-    setTimeout(myTimer, 1000);
-  }
-}
-</script>
 
 
