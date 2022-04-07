@@ -10,31 +10,33 @@
 <body>
    
         <div id="header">
-            <h1 id="login-header" style="color:beige;">Welcome!</h1>
+            <h1 id="login-header" style="color:beige;">Good Morning!</h1>
         </div>
 
         <h2 id ="quote-header">Here's a quote to help you power through:</h2>
         <h3 id = "quote"> </h3>
         <button type = "button" id = "newQuote">Click for a new quote</button>
-        
+        <h3 id = "blank"> </h3>
+
         <h2 id ="fact-header">Did you know that...</h2>
         <h3 id = "fact"> </h3>
         <button type = "button" id = "newFact">Click for a new fact</button>
-
+        <h3 id = "blank"> </h3>
+        
         <h2 id ="mind-header">Begin a mindfulness session?</h2>
         <h3 id= "countdown">Improve thinking in just 60 seconds.</h3>
         <button type = "button" id = "gameStart">Start timer</button>
-        
+        <h3 id = "blank"> </h3>
+        <h3 id = "blank"> </h3>
         <h1 id="end-header">Enjoy your day!</h1>
 
         <body>
             <div class="center">
                
-                <img src="icons/homeCurrent.png"  id = "homeClick" width="100" height="100">
-                <img src="icons/diet.png" id = "dietClick" width="100" height="100">
-                <img src="icons/exercise.png"  id = "exerciseClick" width="100" height="100">
-                <img src="icons/slumber.png" id = "slumberClick" width="100" height="100">
-                
+                <img src="icons/homeCurrent.png"  id = "homeClick" width="95" height="95">
+                <img src="icons/diet.png" id = "dietClick" width="95" height="95">
+                <img src="icons/exercise.png"  id = "exerciseClick" width="95" height="95">
+                <img src="icons/slumber.png" id = "slumberClick" width="95" height="95">
 
             </div>
         </body>
@@ -45,17 +47,5 @@
 
 </html>
 
-<script>
-    let cTime = 120;
-    function myTimer(){
-    if(cTime == 0){
-    document.getElementById("countdown").innerHTML = "Resend code";
-    } else{
-    document.getElementById("countdown").innerHTML = cTime;
-    cTime = cTime - 1;
-    setTimeout(myTimer, 1000);
-  }
-}
-</script>
 
 

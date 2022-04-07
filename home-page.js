@@ -9,8 +9,14 @@ const fact = document.getElementById("fact");
 const newFact = document.getElementById("newFact");
 const timer = document.getElementById("gameStart");
 const nameTag = document.getElementById("login-header");
+var now = new Date();
 
-nameTag.innerHTML = "Welcome" + document.cookie;
+if(now.getHours() > 12 && now.getHours() <= 17)
+    nameTag.innerHTML = ("Good Afternoon!")
+if(now.getHours >= 18 )
+    nameTag.innerHTML = ("Good Evening!")
+
+
 
 let a = Math.round(Math.random() * 3 + 1);
 let y = Math.round(Math.random() * 5 + 1)
@@ -63,7 +69,7 @@ newFact.addEventListener("click", (e) => {
     if(y == 1)
         fact.innerHTML = "dark chocolate has huge health benefits?";
     if(y == 2)
-        fact.innerHTML = "droccoli contains more protein than steak?";
+        fact.innerHTML = "broccoli contains more protein than steak?";
     if(y == 3)
         fact.innerHTML = "decans are rich with antioxidants?";
     if(y == 4)
