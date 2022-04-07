@@ -12,12 +12,43 @@
 
 <body>
     <div id="header">
-        <h2 id="date">Today's Focus</h2>
-        <h1 id="focus"></h1> 
+    <h1 id="pump">Get Active!</h1>
+    <h2 id="date">Today's Focus:</h2>
+    <h1 id="focus">You</h1>
     </div>
-                                  
+        
+        
+    <div id="top">
+       <input id="genBut" type="button" value="Generate Workout"> 
+       <form id="form">
+            <legend><strong>Select Focus</strong></legend> 
+            <select id="focus-choice" required> 
+                <option id="place" value="" disabled selected hidden>Please Choose...</option>
+                <option id="op">Legs</option>
+                <option id="op"> Arms</option>
+                <option id="op">Chest</option>
+                <option id="op">Cardio</option>
+                <option id="op">Back</option>
+                <option id="op">HIIT</option>
+
+
+            </select> 
+            <br>
+             <legend><strong>Select Level</strong></legend> 
+             <input type="radio" name="level" id="level" value="Beginner" >
+             <label class="red"> Beginner</label>
+             <input type="radio" name="level" id="level" value="Intermediate">
+             <label class="red"> Intermediate</label>
+             <input type="radio" name="level" id="level" value="Advanced">
+             <label class="red"> Advanced</label>
+             <br>
+             <br>
+             <input id="clear" type="reset" value="Clear Input" /> 
+             <input id="submit" type="button" value="Start Workout" /> 
+       </form>
+    </div>
     
-     
+    
      
     
   
