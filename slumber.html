@@ -134,7 +134,12 @@
                 config,
               );
               </script>
-          
+              <form>
+                <div>
+                  <input id="rangeInput" type="range" min="0" max="24" oninput="amount.value=rangeInput.value" />
+                  <input id="amount" type="number" value="12" min="0" max="24" oninput="rangeInput.value=amount.value" />
+                </div>
+              </form>
             </body> 
             
           <div class="center">
