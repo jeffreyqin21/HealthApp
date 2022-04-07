@@ -126,10 +126,18 @@ select {
 
 #w{
     display: none;
+    font-family: 'Lato';
+    font-size: 45px;
+    color:darkblue;
+    margin-bottom: 0rem;
 }
 
 #desc {
     display: none;
+    font-family: 'Lato-Light';
+    font-size: 35px;
+    color:cornflowerblue;
+    padding-top: 0rem;
 }
 
 #back, #finish {
@@ -160,7 +168,7 @@ legend {
 
 }
 
-label {
+.red {
     font-family: 'Lato';
     font-size: 40px;
     color:cornflowerblue;
@@ -174,9 +182,25 @@ input[type=radio] {
 }
 
 #summary{
-    width:400px;
+    width:500px;
     margin: 0 auto;
     justify-items: center;
+    font-family: 'Lato';
+    font-size: 40px;
+
+}
+
+input[type=checkbox]{
+    transform: scale(2.5);
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+#sumL {
+    font-family: 'Lato';
+    font-size: 50px;
+    color:cornflowerblue;
+    vertical-align: middle;
 }
 /* 
 
