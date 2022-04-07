@@ -1,3 +1,4 @@
+
 const dietClick = document.getElementById("dietClick");
 const exerciseClick = document.getElementById("exerciseClick");
 const slumberClick = document.getElementById("slumberClick");
@@ -7,6 +8,14 @@ const newQuote = document.getElementById("newQuote");
 const fact = document.getElementById("fact");
 const newFact = document.getElementById("newFact");
 const timer = document.getElementById("gameStart");
+const nameTag = document.getElementById("login-header");
+var now = new Date();
+
+if(now.getHours() > 12 && now.getHours() <= 17)
+    nameTag.innerHTML = ("Good Afternoon!")
+if(now.getHours >= 18 )
+    nameTag.innerHTML = ("Good Evening!")
+
 
 
 let a = Math.round(Math.random() * 3 + 1);
@@ -23,17 +32,17 @@ if(a == 4)
     quote.innerHTML = "\"Don't watch the clock; do what it does. Keep going.\" -Sam Levenson";
 
 if(y == 1)
-    fact.innerHTML = "Dark chocolate has huge health benefits?";
+    fact.innerHTML = "dark chocolate has huge health benefits?";
 if(y == 2)
-    fact.innerHTML = "Broccoli contains more protein than steak?";
+    fact.innerHTML = "broccoli contains more protein than steak?";
 if(y == 3)
-    fact.innerHTML = "Pecans are rich with antioxidants?";
+    fact.innerHTML = "pecans are rich with antioxidants?";
 if(y == 4)
-    fact.innerHTML = "Exercising improves brain performance?";
+    fact.innerHTML = "exercising improves brain performance?";
 if(y == 5)
-    fact.innerHTML = "Exercise prevents signs of ageing?";
+    fact.innerHTML = "exercise prevents signs of aging?";
 if(y == 6)
-    fact.innerHTML = "Workouts can improve the look of your skin?";
+    fact.innerHTML = "workouts can improve the look of your skin?";
 
 
 newQuote.addEventListener("click", (e) => {
@@ -58,22 +67,22 @@ newFact.addEventListener("click", (e) => {
         z = Math.round(Math.random() * 5 + 1);
     y = z;
     if(y == 1)
-        fact.innerHTML = "Dark chocolate has huge health benefits?";
+        fact.innerHTML = "dark chocolate has huge health benefits?";
     if(y == 2)
-        fact.innerHTML = "Broccoli contains more protein than steak?";
+        fact.innerHTML = "broccoli contains more protein than steak?";
     if(y == 3)
-        fact.innerHTML = "Pecans are rich with antioxidants?";
+        fact.innerHTML = "decans are rich with antioxidants?";
     if(y == 4)
-        fact.innerHTML = "Exercising improves brain performance?";
+        fact.innerHTML = "exercising improves brain performance?";
     if(y == 5)
-        fact.innerHTML = "Exercise prevents signs of ageing?";
+        fact.innerHTML = "exercise prevents signs of aging?";
     if(y == 6)
-        fact.innerHTML = "Workouts can improve the look of your skin?";
+        fact.innerHTML = "workouts can improve the look of your skin?";
     
 })
 
 document.getElementById("gameStart").addEventListener("click", function(){
-    var timeleft = 10;
+    var timeleft = 60;
 
     var downloadTimer = setInterval(function function1(){
     var sectionTime = timeleft % 10;

@@ -1,32 +1,51 @@
 @font-face {
-    font-family: "Lato";
-    src: url('698242188-Lato-Bla.eot');
-    src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'),
-    url('698242188-Lato-Bla.svg#Lato Black') format('svg'),
-    url('698242188-Lato-Bla.woff') format('woff'),
-    url('698242188-Lato-Bla.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('./fonts/Lato-Light.ttf');
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('./fonts/Lato-Bold.ttf');
 }
 
 h1{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
 h2{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato-Bold';
     display: flex;
     justify-content: left;
     align-items: center;
+}
+
+h3{
+    font-family: 'Lato-Light';
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#header {
+    background-color: darkblue;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+
 }
 @media (max-width: 600px) {
     body {
       background-color: pink;
     
-      background: url(/icons/food.png) repeat 0 0;
+      background: url(./icons/food.png) repeat 0 0;
     
     }
   }
