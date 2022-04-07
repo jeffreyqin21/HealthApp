@@ -4,6 +4,8 @@ function main () {
     days();
     document.querySelector("#genBut").onclick = generate;
     document.querySelector("#submit").onclick = flow;
+    document.querySelector("#finish").onclick = finish;
+
 
 
 }
@@ -17,7 +19,18 @@ function days() {
 
 function generate() {
     document.getElementById("genBut").style.display = "none";
+    document.getElementById("summary").style.display = "none";
     document.getElementById("form").style.display = "inline";
+}
+
+function finish() {
+    document.getElementById("back").style.display = "none";
+    document.getElementById("finish").style.display = "none";
+    document.getElementById("genBut").style.display = "inline";
+    document.getElementById("w").style.display = "none";
+    document.getElementById("desc").style.display = "none";
+    document.getElementById("summary").style.display = "block";
+
 }
 
 function focus() {
@@ -29,6 +42,7 @@ function focus() {
 function flow () {
     focus();
     closeForm();
+    displayWork();  
 }
 
 function closeForm() {
@@ -36,6 +50,12 @@ function closeForm() {
 
 }
 
+function displayWork() {
+    document.getElementById("back").style.display = "inline";
+    document.getElementById("finish").style.display = "inline";
+    document.getElementById("w").style.display = "block";
+    document.getElementById("desc").style.display = "block";
+}
 
 
 /* function move() {

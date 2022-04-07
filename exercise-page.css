@@ -103,7 +103,7 @@ select {
     justify-items: center;
 }
 
-#genBut {
+#genBut{
     font-family: 'Lato-Light';
     font-size: 45px;
     color:darkblue;
@@ -114,6 +114,36 @@ select {
     margin-top: 5rem;
     width: 450px;
     margin-bottom: 2rem;
+}
+
+
+#armbeg {
+    padding-top: 2rem;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+#w{
+    display: none;
+}
+
+#desc {
+    display: none;
+}
+
+#back, #finish {
+    display: none;
+    margin: 0 auto;
+    height: 53px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 35px;
+    color:darkblue;
+    border: .25rem solid cornflowerblue;
+    border-radius: 1rem;
+    width: 450px;
+
 }
 
 #form {
@@ -141,6 +171,12 @@ input[type=radio] {
     transform: scale(2);
     margin-left: 2rem;
     margin-right: .6rem;
+}
+
+#summary{
+    width:400px;
+    margin: 0 auto;
+    justify-items: center;
 }
 /* 
 
