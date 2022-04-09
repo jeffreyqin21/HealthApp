@@ -103,7 +103,7 @@ select {
     justify-items: center;
 }
 
-#genBut {
+#genBut{
     font-family: 'Lato-Light';
     font-size: 45px;
     color:darkblue;
@@ -114,6 +114,44 @@ select {
     margin-top: 5rem;
     width: 450px;
     margin-bottom: 2rem;
+}
+
+
+#armbeg {
+    padding-top: 2rem;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+#w{
+    display: none;
+    font-family: 'Lato';
+    font-size: 45px;
+    color:darkblue;
+    margin-bottom: 0rem;
+}
+
+#desc {
+    display: none;
+    font-family: 'Lato-Light';
+    font-size: 35px;
+    color:cornflowerblue;
+    padding-top: 0rem;
+}
+
+#back, #finish {
+    display: none;
+    margin: 0 auto;
+    height: 53px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 35px;
+    color:darkblue;
+    border: .25rem solid cornflowerblue;
+    border-radius: 1rem;
+    width: 450px;
+
 }
 
 #form {
@@ -130,7 +168,7 @@ legend {
 
 }
 
-label {
+.red {
     font-family: 'Lato';
     font-size: 40px;
     color:cornflowerblue;
@@ -141,6 +179,28 @@ input[type=radio] {
     transform: scale(2);
     margin-left: 2rem;
     margin-right: .6rem;
+}
+
+#summary{
+    width:500px;
+    margin: 0 auto;
+    justify-items: center;
+    font-family: 'Lato';
+    font-size: 40px;
+
+}
+
+input[type=checkbox]{
+    transform: scale(2.5);
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+#sumL {
+    font-family: 'Lato';
+    font-size: 50px;
+    color:cornflowerblue;
+    vertical-align: middle;
 }
 /* 
 

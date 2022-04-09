@@ -25,8 +25,7 @@
         /*page background*/
         .chartCard { 
           width: 100vw;
-          height: calc(100vh - 40px);
-          background: rgba(255, 26, 104, 0.2);
+          height: 300;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -44,12 +43,10 @@
 </head>
 
 <body>
-    <main id="main-holder">
-        <h1 id="login-header">Sleep Tracking</h1>
-        <h2 id="chart-header"></h2>
-        <h2 id="exercise-header"></h2>
-
-        <body>
+    
+        <h1 id="header" style ="color: beige">Sleep Tracking</h1>
+        <h2 class="headertekst"> Here is your sleep chart displayed over the past week!</h2>
+        
               <div class="chartCard">
                 <div class="chartBox">
                   <canvas id="sleepChart"></canvas>
@@ -63,7 +60,7 @@
                 labels: labels,
                 datasets: [{
                   label: 'Daily Sleep',
-                  data: [10, 6, 8, 3, 5, 9, 11],
+                  data: [10, 6, 8, 7, 5, 9, 11],
                   backgroundColor: [
                     'rgba(255, 26, 104, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -82,7 +79,7 @@
                     'rgba(255, 159, 64, 1)',
                     'rgba(0, 0, 0, 1)'
                   ],
-                  borderWidth: 1
+                  borderWidth: 3
                 }]
               };
           
@@ -134,26 +131,43 @@
                 config,
               );
               </script>
+
+<div class="center">
+               
+  <img src="icons/home.png"  id = "homeClick" width="95" height="95">
+  <img src="icons/diet.png" id = "dietClick" width="95" height="95">
+  <img src="icons/exercise.png"  id = "exerciseClick" width="95" height="95">
+  <img src="icons/slumberCurrent.png" id = "slumberClick" width="95" height="95">
+
+</div>
               <form>
-                <div>
-                  <input id="rangeInput" type="range" min="0" max="24" oninput="amount.value=rangeInput.value" />
-                  <input id="amount" type="number" value="12" min="0" max="24" oninput="rangeInput.value=amount.value" />
+                <div class = "slide">
+                  <div id="slider">
+                    <input id="rangeInput" type="range" min="0" max="24" oninput="amount.value=rangeInput.value" />
+                    <input id="amount" type="number" value="12" min="0" max="24" oninput="rangeInput.value=amount.value" />
+                  </div>
                 </div>
               </form>
-            </body> 
+
+            <br>
+             <legend><strong>How did you feel after waking up?</strong></legend> 
+             <input type="radio" name="level" id="level" value="Beginner" >
+             <label class="red"> Drowsy</label>
+             <input type="radio" name="level" id="level" value="Intermediate">
+             <label class="red"> Normal</label>
+             <input type="radio" name="level" id="level" value="Advanced">
+             <label class="red"> Rested</label>
+             <br>
+             <br>
+             <input id="clear" type="reset" value="Clear Input" /> 
+             <input id="submit" type="button" value="Give Advice" /> 
             
-          <div class="center">
-               
-            <img src="icons/home.png"  id = "homeClick" width="100" height="100">
-            <img src="icons/diet.png" id = "dietClick" width="100" height="100">
-            <img src="icons/exercise.png"  id = "exerciseClick" width="100" height="100">
-            <img src="icons/slumberCurrent.png" id = "slumberClick" width="100" height="100">
-
-          </div>
-        </body>
+            
+          
+        
 
 
-    </main>
+   
 </body>
 
 </html>
