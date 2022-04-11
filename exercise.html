@@ -19,13 +19,12 @@
         
         
     <div id="top">
-       <input id="genBut" type="button" value="Generate Workout"> 
        <form id="form">
-            <legend><strong>Select Focus</strong></legend> 
+            <legend id ="focsel"><strong>Select Focus</strong></legend> 
             <select id="focus-choice" required> 
                 <option id="place" value="" disabled selected hidden>Please Choose...</option>
                 <option id="op">Legs</option>
-                <option id="op"> Arms</option>
+                <option id="op">Arms</option>
                 <option id="op">Chest</option>
                 <option id="op">Cardio</option>
                 <option id="op">Back</option>
@@ -33,6 +32,8 @@
 
 
             </select> 
+            <br>
+            <br>
             <br>
              <legend><strong>Select Level</strong></legend> 
              <input type="radio" name="level" id="level" value="Beginner" >
@@ -43,13 +44,16 @@
              <label class="red"> Advanced</label>
              <br>
              <br>
-             <input id="clear" type="reset" value="Clear Input" /> 
+             <br>
+             <br>
+             <input id="backk" type="button" value="Back" /> 
              <input id="submit" type="button" value="Start Workout" /> 
        </form>
+        <h2 id="error">Error: Please fill out all fields. As a reminder, the current working options for Focus in this Phase are "Arms", "Legs", and "HIIT".</h2>
 
        <div id="summary">
         <fieldset>
-        <legend><strong>Daily Checklist</strong></legend> 
+        <legend id= "checklist"><strong>Daily Checklist</strong></legend> 
         <input type="checkbox" name="worked"> 
         <label id="sumL">Workout</label> 
         <br>
@@ -61,17 +65,23 @@
         
     </fieldset> 	                       
        </div>
-    
-       <div id="armBeg"> 
-            <h3 id="w">workout 1</h3>
-            <p id="desc">desc</p>
-            <h3 id="w">workout 2</h3>
-            <p id="desc">desc</p>
-            <h3 id="w">workout 3</h3>
-            <p id="desc">desc</p>
-            <h3 id="w">workout 4</h3>
-            <p id="desc">desc</p>
+       <input id="genBut" type="button" value="Generate Workout"> 
 
+       <div id="armBeg"> 
+            <h3 id="w1">workout 1</h3>
+            <p id="d1">desc</p>
+            <h4 id="r1">REST</h4>
+            <h3 id="w2">workout 2</h3>
+            <p id="d2">desc</p>
+            <h4 id="r2">REST</h4>
+            <h3 id="w3">workout 3</h3>
+            <p id="d3">desc</p>
+            <h4 id="r3">REST</h4>
+            <h3 id="w4">workout 4</h3>
+            <p id="d4">desc</p>
+            <h4 id="r4">REST</h4>
+            <br>
+            <br>
             <input id="back" type="button" value="Back" /> 
             <input id="finish" type="button" value="Finish Workout" /> 
        </div>

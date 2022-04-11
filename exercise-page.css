@@ -64,7 +64,7 @@ body {
     font-family: 'Lato';
 }
 
-#submit, #clear {
+#submit, #backk {
     display: inline;
     margin: 0 auto;
     height: 53px;
@@ -124,23 +124,64 @@ select {
     
 }
 
-#w{
+#w1, #w2, #w3, #w4 {
     display: none;
     font-family: 'Lato';
     font-size: 45px;
     color:darkblue;
-    margin-bottom: 0rem;
+    margin-bottom: .25rem;
 }
 
-#desc {
+#r1,#r2,#r3,#r4 {
+    display: none;
+    font-family: 'Lato';
+    font-size: 40px;
+    color:brown;
+    margin-top: .1rem;
+}
+
+#d1, #d2, #d3, #d4 {
     display: none;
     font-family: 'Lato-Light';
     font-size: 35px;
     color:cornflowerblue;
-    padding-top: 0rem;
+    margin-top: 0rem;
+}
+#focsel {
+    margin-top: 3rem;
+}
+
+#w1 {
+    margin-top: 0rem;
+
+}
+#error {
+    border: .25rem solid red;
+    padding: 1rem;
+    width: 500px;
+    font-family: 'Lato';
+    display:none;
+    font-size: 35px;
+    color:red;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 #back, #finish {
+    display: none;
+    margin: 0 auto;
+    height: 53px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 35px;
+    color:darkblue;
+    border: .25rem solid cornflowerblue;
+    border-radius: 1rem;
+    width: 450px;
+
+}
+
+#rest {
     display: none;
     margin: 0 auto;
     height: 53px;
@@ -184,6 +225,8 @@ input[type=radio] {
 #summary{
     width:500px;
     margin: 0 auto;
+    margin-top: 7rem;
+
     justify-items: center;
     font-family: 'Lato';
     font-size: 40px;
@@ -202,82 +245,3 @@ input[type=checkbox]{
     color:cornflowerblue;
     vertical-align: middle;
 }
-/* 
-
-
-
-input[type=checkbox]{
-    transform: scale(3.5);
-
-}
-
-
-.wname {
-    float: left;
-
-}
-
-#box {
-    float:right;
-}
-
-table,td {
-    font-family: 'Lato';
-    font-size: 37px;
-    color: darkblue;
-    margin-left: 2rem;
-    height:100px;
-    
-
-}
-
-#daily {
-    width: 400px;
-    border-style: dashed;
-    border-radius: 3rem;
-    border-color:cornflowerblue;
-    border-width: .25rem;
-    padding: 0rem;
-    margin-top: 2rem;
-    margin-left: 3rem;
-}
-
-/* 
-<div id="checks"> 
-            <label class="wname" id="w1">this is 1</label> 
-             <input id="box" type="checkbox" name="w1"> 
-             <br><br>
-             <label class="wname" id="w2">this is 2</label> 
-             <input id="box" type="checkbox" name="w2"> 
-             <br><br>
-
-
-
-#update {
-    font-family: 'Lato';
-    font-size: 30px;
-    background-color: rgb(232, 224, 224);
-    color: rgb(80, 77, 77);
-    border-radius: .7rem;
-    border-width: .25rem;
-    margin-left: 45rem;
-    margin-top: 50rem;
-}
-    <input type="button" class="button" id="update" value="Start Workout">
-
-
- #myProgress {
-    width: 100%;
-    background-color: grey;
-  }
-  nackground ogrgb(233, 231, 231)
-  #myBar {
-    width: 1%;
-    height: 50px;
-    background-color: blue;
-  }
-
-  <div id="myProgress">
-        <div id="myBar"></div>
-      </div>
-  */
