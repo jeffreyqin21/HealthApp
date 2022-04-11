@@ -21,7 +21,7 @@ loginButton.addEventListener("click", (e) => {
 })
 
 loginForm.addEventListener("click", (e) => {
-   key.style.display = "inline"
+    key.style.display = "inline"
 })
 
 clickOut.addEventListener("click", (e) => {

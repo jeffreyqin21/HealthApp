@@ -18,7 +18,7 @@ html {
     body {
       background-color: pink;
     
-      background: url(/Users/jeffreyqin/cmsc434/HealthApp/icons/food.png) repeat 0 0;
+      background: url(./icons/food.png) repeat 0 0;
     
     }
   }

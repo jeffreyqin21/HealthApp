@@ -29,8 +29,8 @@ body {
 #header {
     background-color: darkblue;
     height: 250px;
-    border-top-right-radius: 3rem;
-    border-top-left-radius: 3rem;
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 4rem;
     margin-top: -2rem;
     text-align: center;
 }
