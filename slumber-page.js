@@ -15,3 +15,12 @@ slumberClick.addEventListener("click", (e) => {
 homeClick.addEventListener("click", (e) => {
      window.location = 'home.html';   
 })
+
+function change() 
+{
+    var elem = document.getElementById("name");
+    if (elem.value == 'Drowsy') elem.value = "Sleep Advice";
+    if (elem.value == 'Normal') elem.value = "Basic Advice";
+    else elem.value == "Good Job ... No advice needed"
+    
+}
