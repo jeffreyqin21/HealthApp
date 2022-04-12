@@ -23,13 +23,13 @@ let y = Math.round(Math.random() * 5 + 1)
 let time = 60;
 
 if(a == 1)
-    quote.innerHTML = "\"It always seems impossible until it's done.\" -Nelson Mandela";
+    quote.innerHTML = "\“Stay hungry. Stay foolish.\” – Steve Jobs";
 if(a == 2)
-    quote.innerHTML = "\"If you can dream it, you can do it.\" -Walt Disney";
+    quote.innerHTML = "\"If you can dream it, you can do it.\" - Walt Disney";
 if(a == 3)
-    quote.innerHTML = "\"If you fell down yesterday, stand up today.\" -H. G. Wells";
+    quote.innerHTML = "\“Impossible is for the unwilling.\” - John Keats"
 if(a == 4)
-    quote.innerHTML = "\"Don't watch the clock; do what it does. Keep going.\" -Sam Levenson";
+    quote.innerHTML = "\“Keep going. Be all in.\” – Bryan Hutchinson"
 
 if(y == 1)
     fact.innerHTML = "dark chocolate has huge health benefits?";
@@ -51,13 +51,13 @@ newQuote.addEventListener("click", (e) => {
         b = Math.round(Math.random() * 3 + 1);
     a = b;
     if(a == 1)
-        quote.innerHTML = "\"It always seems impossible until it's done.\" - Nelson Mandela";
+        quote.innerHTML = "\“Stay hungry. Stay foolish.\” – Steve Jobs";
     if(a == 2)
-        quote.innerHTML = "\"If you can dream it, you can do it.\" -Walt Disney";
+        quote.innerHTML = "\"If you can dream it, you can do it.\" - Walt Disney";
     if(a == 3)
-        quote.innerHTML = "\"If you fell down yesterday, stand up today.\" -H. G. Wells";
+        quote.innerHTML = "\“Impossible is for the unwilling.\” - John Keats"
     if(a == 4)
-        quote.innerHTML = "\"Don't watch the clock; do what it does. Keep going.\" -Sam Levenson";
+        quote.innerHTML = "\“Keep going. Be all in.\” – Bryan Hutchinson";
     
 })
 

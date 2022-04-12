@@ -22,14 +22,14 @@ h1{
 h2{
     font-family: 'Lato-Bold';
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
 h3{
     font-family: 'Lato-Light';
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
@@ -42,6 +42,36 @@ h3{
     
 
 }
+
+button{
+    display: inline;
+    margin: 0 auto;
+    height: 28px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 15px;
+    color:darkblue;
+    border: .25rem solid cornflowerblue;
+    border-radius: 1rem;
+    width: 200px;
+
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+
 @media (max-width: 600px) {
     body {
       background-color: pink;

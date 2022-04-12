@@ -1,7 +1,25 @@
+window.onload = main
 const dietClick = document.getElementById("dietClick");
 const exerciseClick = document.getElementById("exerciseClick");
 const slumberClick = document.getElementById("slumberClick");
 const homeClick = document.getElementById("homeClick");
+
+function main () {
+   
+    
+    document.querySelector("#submit").onclick = flow;
+}
+
+
+function flow () {
+    if(document.getElementById("level1").checked)
+        document.getElementById("advice").innerHTML = "Try sleeping earlier than usual and take melatonin.";
+    if(document.getElementById("level2").checked)
+        document.getElementById("advice").innerHTML = "Nice! Try and put your phone away before getting into bed.";
+    if(document.getElementById("level3").checked)
+        document.getElementById("advice").innerHTML = "Great job! Keep up the sleep.";
+    
+}
 
 dietClick.addEventListener("click", (e) => {
      window.location = 'diet.html';   
