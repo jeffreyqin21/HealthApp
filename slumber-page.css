@@ -54,7 +54,7 @@ h2.headertekst{
     width: 100%;
 }
 
-#submit, #clear {
+#submit {
     display: inline;
     margin: 0 auto;
     height: 35px;
