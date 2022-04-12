@@ -20,23 +20,9 @@
     src: url('/fonts/Lato-Thin.ttf');
 }
 
-body {
-  overflow-y: none;
-  width: 100%;
-  background-color: rgb(233, 231, 231);
-}
 
 #doggo {
     margin-top: 5rem;
-}
-
-#header {
-    background-color:rgb(11, 123, 234);
-    height: 250px;
-    border-top-right-radius: 4rem;
-    border-top-left-radius: 4rem;
-    margin-top: -2rem;
-    text-align: center;
 }
 
 #pump {
@@ -280,6 +266,7 @@ function countdown() {
 
 
 */
+
 #navigation {
     background-color: bisque;
     height: 220px;
@@ -302,3 +289,22 @@ function countdown() {
 #exercise{
     background-color: rgb(240, 214, 183);
 }
+
+
+
+/* background + header */
+body {
+    overflow-y: none;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+  }
+  
+  
+  #header {
+      background-color:rgb(11, 123, 234);
+      height: 250px;
+      border-top-right-radius: 4rem;
+      border-top-left-radius: 4rem;
+      margin-top: -2rem;
+      text-align: center;
+  }

@@ -12,51 +12,58 @@
     src: url('./fonts/Lato-Bold.ttf');
 }
 
-h1{
+#pump {
+    font-family: 'Lato';
+    font-size: 60px;
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: bisque;
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    overflow-y: none;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+  }
+  
+  
+  #header {
+      background-color:rgb(11, 123, 234);
+      height: 250px;
+      border-top-right-radius: 4rem;
+      border-top-left-radius: 4rem;
+      margin-top: -2rem;
+      text-align: center;
+  }
+
+
+
+  h1 {
     font-family: 'Lato';
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
-h2{
+h2 {
     font-family: 'Lato-Bold';
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h3{
+h3 {
     font-family: 'Lato-Light';
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#header {
-    background-color: darkblue;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border-top-right-radius: 3rem;
-    border-top-left-radius: 3rem;
-    
 
-}
-
-button{
-    display: inline;
-    margin: 0 auto;
-    height: 28px;
-    text-align: center;
-    font-family: 'Lato-Light';
-    font-size: 15px;
-    color:darkblue;
-    border: .25rem solid cornflowerblue;
-    border-radius: 1rem;
-    width: 200px;
-
-}
-
+  /*
 .container {
     height: 200px;
     position: relative;
@@ -70,8 +77,19 @@ button{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+button{
+    display: inline;
+    margin: 0 auto;
+    height: 28px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 15px;
+    color:darkblue;
+    border: .25rem solid cornflowerblue;
+    border-radius: 1rem;
+    width: 200px;
 
-
+}
 @media (max-width: 600px) {
     body {
       background-color: pink;
@@ -88,4 +106,5 @@ button{
     
     }
 
+    */
 
