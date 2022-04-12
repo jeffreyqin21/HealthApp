@@ -131,35 +131,101 @@ function org(foc, level) {
     if (level == "Beginner") {
         switch(foc) {
             case "Arms":
-                document.getElementById("w1").innerHTML = "this is 1";
-                document.getElementById("d1").innerHTML = "this is desc 1";
-                document.getElementById("w2").innerHTML = "this is 2";
-                document.getElementById("d2").innerHTML = "this is desc 2"; 
-                document.getElementById("w3").innerHTML = "this is 2";
-                document.getElementById("d3").innerHTML = "this is desc 2"; 
-                document.getElementById("w4").innerHTML = "this is 2";
-                document.getElementById("d4").innerHTML = "this is desc 2";    
+                document.getElementById("w1").innerHTML = "Bicep Curls";
+                document.getElementById("d1").innerHTML = "3 x 10";
+                document.getElementById("w2").innerHTML = "Tricep Pushdowns";
+                document.getElementById("d2").innerHTML = "3 x 10"; 
+                document.getElementById("w3").innerHTML = "Hammer Curls";
+                document.getElementById("d3").innerHTML = "3 x 10"; 
+                document.getElementById("w4").innerHTML = "Lateral Raises";
+                document.getElementById("d4").innerHTML = "3 x 10";    
                 break;
             case "Legs":
-                document.getElementById("w1").innerHTML = "this is 1";
-                document.getElementById("d1").innerHTML = "this is desc 1";
-                document.getElementById("w2").innerHTML = "this is 2";
-                document.getElementById("d2").innerHTML = "this is desc 2"; 
-                document.getElementById("w3").innerHTML = "this is 2";
-                document.getElementById("d3").innerHTML = "this is desc 2"; 
-                document.getElementById("w4").innerHTML = "this is 2";
-                document.getElementById("d4").innerHTML = "this is desc 2";    
+                document.getElementById("w1").innerHTML = "Squats";
+                document.getElementById("d1").innerHTML = "3 x 10";
+                document.getElementById("w2").innerHTML = "Leg Curls";
+                document.getElementById("d2").innerHTML = "3 x 10"; 
+                document.getElementById("w3").innerHTML = "Leg Extensions";
+                document.getElementById("d3").innerHTML = "3 x 10"; 
+                document.getElementById("w4").innerHTML = "Calf Raises";
+                document.getElementById("d4").innerHTML = "3 x 10";    
                 break;
             case "HIIT":
-                document.getElementById("w1").innerHTML = "this is 1";
-                document.getElementById("d1").innerHTML = "this is desc 1";
-                document.getElementById("w2").innerHTML = "this is 2";
-                document.getElementById("d2").innerHTML = "this is desc 2"; 
-                document.getElementById("w3").innerHTML = "this is 2";
-                document.getElementById("d3").innerHTML = "this is desc 2"; 
-                document.getElementById("w4").innerHTML = "this is 2";
-                document.getElementById("d4").innerHTML = "this is desc 2";    
+                document.getElementById("w1").innerHTML = "Jumping Jacks";
+                document.getElementById("d1").innerHTML = "3 x 20";
+                document.getElementById("w2").innerHTML = "Mountain Climbers";
+                document.getElementById("d2").innerHTML = "3 x 30 Seconds"; 
+                document.getElementById("w3").innerHTML = "Plank";
+                document.getElementById("d3").innerHTML = "3 x 30 seconds"; 
+                document.getElementById("w4").innerHTML = "High Knees";
+                document.getElementById("d4").innerHTML = "3 x 30 seconds";    
                 break;
-        }
+        } 
+    } else if (level == "Intermediate") {
+        switch(foc) {
+            case "Arms":
+                document.getElementById("w1").innerHTML = "Bicep Curls";
+                document.getElementById("d1").innerHTML = "4 x 15";
+                document.getElementById("w2").innerHTML = "Tricep Pushdowns";
+                document.getElementById("d2").innerHTML = "4 x 15"; 
+                document.getElementById("w3").innerHTML = "Hammer Curls";
+                document.getElementById("d3").innerHTML = "4 x 15"; 
+                document.getElementById("w4").innerHTML = "Lateral Raises";
+                document.getElementById("d4").innerHTML = "4 x 15";    
+                break;
+            case "Legs":
+                document.getElementById("w1").innerHTML = "Squats";
+                document.getElementById("d1").innerHTML = "4 x 15";
+                document.getElementById("w2").innerHTML = "Leg Curls";
+                document.getElementById("d2").innerHTML = "4 x 15"; 
+                document.getElementById("w3").innerHTML = "Leg Extensions";
+                document.getElementById("d3").innerHTML = "4 x 15"; 
+                document.getElementById("w4").innerHTML = "Calf Raises";
+                document.getElementById("d4").innerHTML = "4 x 15";    
+                break;
+            case "HIIT":
+                document.getElementById("w1").innerHTML = "Jumping Jacks";
+                document.getElementById("d1").innerHTML = "4 x 20";
+                document.getElementById("w2").innerHTML = "Mountain Climbers";
+                document.getElementById("d2").innerHTML = "4 x 45 Seconds"; 
+                document.getElementById("w3").innerHTML = "Plank";
+                document.getElementById("d3").innerHTML = "4 x 45 seconds"; 
+                document.getElementById("w4").innerHTML = "High Knees";
+                document.getElementById("d4").innerHTML = "4 x 45 seconds";    
+                break;
+        } 
+    } else if (level == "Advanced") {
+        switch(foc) {
+            case "Arms":
+                document.getElementById("w1").innerHTML = "Bicep Curls";
+                document.getElementById("d1").innerHTML = "5 X 20";
+                document.getElementById("w2").innerHTML = "Tricep Pushdowns";
+                document.getElementById("d2").innerHTML = "5 X 20"; 
+                document.getElementById("w3").innerHTML = "Hammer Curls";
+                document.getElementById("d3").innerHTML = "5 X 20"; 
+                document.getElementById("w4").innerHTML = "Lateral Raises";
+                document.getElementById("d4").innerHTML = "5 X 20";    
+                break;
+            case "Legs":
+                document.getElementById("w1").innerHTML = "Squats";
+                document.getElementById("d1").innerHTML = "5 X 20";
+                document.getElementById("w2").innerHTML = "Leg Curls";
+                document.getElementById("d2").innerHTML = "5 X 20"; 
+                document.getElementById("w3").innerHTML = "Leg Extensions";
+                document.getElementById("d3").innerHTML = "5 X 20"; 
+                document.getElementById("w4").innerHTML = "Calf Raises";
+                document.getElementById("d4").innerHTML = "5 X 20";    
+                break;
+            case "HIIT":
+                document.getElementById("w1").innerHTML = "Jumping Jacks";
+                document.getElementById("d1").innerHTML = "5 X 30";
+                document.getElementById("w2").innerHTML = "Mountain Climbers";
+                document.getElementById("d2").innerHTML = "4 x 60 Seconds"; 
+                document.getElementById("w3").innerHTML = "Plank";
+                document.getElementById("d3").innerHTML = "4 x 60 seconds"; 
+                document.getElementById("w4").innerHTML = "High Knees";
+                document.getElementById("d4").innerHTML = "4 x 60 seconds";    
+                break;
+        } 
     }
 }

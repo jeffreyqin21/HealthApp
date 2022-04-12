@@ -127,25 +127,29 @@ select {
 #w1, #w2, #w3, #w4 {
     display: none;
     font-family: 'Lato';
-    font-size: 45px;
+    font-size: 38px;
     color:darkblue;
     margin-bottom: .25rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 #r1,#r2,#r3,#r4 {
     display: none;
     font-family: 'Lato';
-    font-size: 40px;
+    font-size: 32px;
     color:brown;
-    margin-top: .1rem;
+    margin-top: 1.5rem;
 }
 
 #d1, #d2, #d3, #d4 {
     display: none;
-    font-family: 'Lato-Light';
+    font-family: 'Lato';
     font-size: 35px;
-    color:cornflowerblue;
+    color:rgb(204, 121, 43);
+    margin: 0 auto;
     margin-top: 0rem;
+
 }
 #focsel {
     margin-top: 3rem;
