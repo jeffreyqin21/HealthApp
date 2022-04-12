@@ -198,29 +198,29 @@ function org(foc, level) {
         switch(foc) {
             case "Arms":
                 document.getElementById("w1").innerHTML = "Bicep Curls";
-                document.getElementById("d1").innerHTML = "5 X 20";
+                document.getElementById("d1").innerHTML = "5 x 20";
                 document.getElementById("w2").innerHTML = "Tricep Pushdowns";
-                document.getElementById("d2").innerHTML = "5 X 20"; 
+                document.getElementById("d2").innerHTML = "5 x 20"; 
                 document.getElementById("w3").innerHTML = "Hammer Curls";
-                document.getElementById("d3").innerHTML = "5 X 20"; 
+                document.getElementById("d3").innerHTML = "5 x 20"; 
                 document.getElementById("w4").innerHTML = "Lateral Raises";
-                document.getElementById("d4").innerHTML = "5 X 20";    
+                document.getElementById("d4").innerHTML = "5 x 20";    
                 break;
             case "Legs":
                 document.getElementById("w1").innerHTML = "Squats";
-                document.getElementById("d1").innerHTML = "5 X 20";
+                document.getElementById("d1").innerHTML = "5 x 20";
                 document.getElementById("w2").innerHTML = "Leg Curls";
-                document.getElementById("d2").innerHTML = "5 X 20"; 
+                document.getElementById("d2").innerHTML = "5 x 20"; 
                 document.getElementById("w3").innerHTML = "Leg Extensions";
-                document.getElementById("d3").innerHTML = "5 X 20"; 
+                document.getElementById("d3").innerHTML = "5 x 20"; 
                 document.getElementById("w4").innerHTML = "Calf Raises";
-                document.getElementById("d4").innerHTML = "5 X 20";    
+                document.getElementById("d4").innerHTML = "5 x 20";    
                 break;
             case "HIIT":
                 document.getElementById("w1").innerHTML = "Jumping Jacks";
-                document.getElementById("d1").innerHTML = "5 X 30";
+                document.getElementById("d1").innerHTML = "5 x 30";
                 document.getElementById("w2").innerHTML = "Mountain Climbers";
-                document.getElementById("d2").innerHTML = "4 x 60 Seconds"; 
+                document.getElementById("d2").innerHTML = "4 x 60 seconds"; 
                 document.getElementById("w3").innerHTML = "Plank";
                 document.getElementById("d3").innerHTML = "4 x 60 seconds"; 
                 document.getElementById("w4").innerHTML = "High Knees";
