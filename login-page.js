@@ -13,7 +13,6 @@ loginButton.addEventListener("click", (e) => {
     
     if ((username === "Bob" || username === "Sally") && password === "434") {
        
-        alert("You have successfully logged in.");
         window.location = 'home.html';
     } else {
         loginErrorMsg.style.opacity = 1;
