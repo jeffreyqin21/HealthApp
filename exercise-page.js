@@ -1,5 +1,9 @@
 window.onload = main
 let isValid = false;
+var timeLeft = 30;
+var elem = document.getElementById('timer');
+
+var timerId = setInterval(countdown, 1000);
 
 function main () {
     days();
@@ -12,6 +16,10 @@ function main () {
 
 
 }
+
+    
+
+
 
 
 
@@ -35,6 +43,7 @@ function back() {
     document.getElementById("summary").style.display = "none";
     document.getElementById("form").style.display = "inline";
     document.getElementById("back").style.display = "none";
+    document.getElementById("rest").style.display = "none";
     document.getElementById("finish").style.display = "none";
     document.getElementById("r1").style.display = "none";
     document.getElementById("r2").style.display = "none";
@@ -63,6 +72,7 @@ function backk () {
 function finish() {
     document.getElementById("back").style.display = "none";
     document.getElementById("finish").style.display = "none";
+    document.getElementById("rest").style.display = "none";
     document.getElementById("genBut").style.display = "inline";
     document.getElementById("r1").style.display = "none";
     document.getElementById("r2").style.display = "none";
@@ -117,6 +127,7 @@ function displayWork() {
     org(foc, level);
     document.getElementById("back").style.display = "inline";
     document.getElementById("finish").style.display = "inline";
+    document.getElementById("rest").style.display = "inline";
     document.getElementById("w1").style.display = "block";
     document.getElementById("d1").style.display = "block";
     document.getElementById("w2").style.display = "block";

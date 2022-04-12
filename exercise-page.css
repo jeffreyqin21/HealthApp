@@ -27,7 +27,7 @@ body {
 }
 
 #doggo {
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 #header {
@@ -197,15 +197,23 @@ select {
     margin: 0 auto;
     height: 53px;
     text-align: center;
-    font-family: 'Lato-Light';
+    font-family: 'Lato';
     font-size: 35px;
-    color:darkblue;
-    border: .25rem solid cornflowerblue;
+    color:brown;
+    border-color:rgb(236, 117, 6);
+    border: .25rem solid ;
     border-radius: 1rem;
     width: 450px;
 
 }
-
+#timer {
+    display: none;
+    margin: 0 auto;
+    height: 53px;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 35px;
+}
 #form {
     display:none;
     font-family: 'Lato';
@@ -259,7 +267,19 @@ input[type=checkbox]{
 
 
 
-/* CSS FOR FOOTER ETC */
+/* CSS FOR FOOTER ETC 
+function countdown() {
+    document.getElementById("rest").style.display = "none";
+      if (timeLeft == -1) {
+        document.getElementById("rest").style.display = "block";
+      } else {
+        elem.innerHTML = timeLeft + ' seconds remaining';
+        timeLeft--;
+      }
+    }
+
+
+*/
 #navigation {
     background-color: bisque;
     height: 220px;
