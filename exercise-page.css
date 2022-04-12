@@ -286,13 +286,19 @@ function countdown() {
     border-bottom-right-radius: 4rem;
     border-bottom-left-radius: 4rem;
     margin-bottom: -2rem;
-    padding-top: 2.25rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
     position: fixed;
     bottom: 0;
     width: 100%;
     display:block;
 }
 #home, #diet, #exercise, #slumber {
-    margin-left: 75px;
-    height:150px;
+    margin-left: 33px;
+    height:170px;
+    padding:1rem;
+}
+/* update this based on which icon you want to darken for the page */
+#exercise{
+    background-color: rgb(240, 214, 183);
 }
