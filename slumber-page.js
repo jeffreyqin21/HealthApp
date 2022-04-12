@@ -24,3 +24,14 @@ function change()
     else elem.value == "Good Job ... No advice needed"
     
 }
+
+document.getElementById("advice").addEventListener("click", function(){
+    var elem = document.getElementById("level1").checked;
+
+    if(document.getElementById("level1").checked)
+        document.getElementById("advice").innerHTML = "s (Breathe IN)";
+    if(document.getElementById("level2").checked)
+        document.getElementById("advice").innerHTML = "s (HOLD Breath)";
+    if(document.getElementById("level3").checked)
+        document.getElementById("advice").innerHTML = "s (Breathe OUT)";
+});

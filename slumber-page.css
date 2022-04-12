@@ -99,6 +99,17 @@ h1{
     box-shadow: 0 0 1em 1em #ccc;
 }
 
+h2{
+    font-family: 'Lato-Bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3, input{
+    margin: 5px;
+}
+
 @media (max-width: 600px) {
     body {
       background-color: pink;
