@@ -29,8 +29,9 @@ body {
 #doggo {
     margin-top: 6rem;
 }
+
 #header {
-    background-color: darkblue;
+    background-color:rgb(11, 123, 234);
     height: 250px;
     border-top-right-radius: 4rem;
     border-top-left-radius: 4rem;
@@ -80,17 +81,7 @@ body {
     width: 450px;
 
 }
-#navigation {
-    background-color: darkblue;
-    height: 220px;
-    border-bottom-right-radius: 4rem;
-    border-bottom-left-radius: 4rem;
-    margin-bottom: -2rem;
-    padding-top: 2.25rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+
 select {
     display: block;
     margin: 0 auto;
@@ -101,10 +92,8 @@ select {
     font-size: x-large;
 }
 
-#home {
-    margin-left: 75px;
-    height:150px;
-}
+
+
 
 #top {
     padding-top: 2rem;
@@ -266,4 +255,24 @@ input[type=checkbox]{
     font-size: 50px;
     color:cornflowerblue;
     vertical-align: middle;
+}
+
+
+
+/* CSS FOR FOOTER ETC */
+#navigation {
+    background-color: bisque;
+    height: 220px;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    margin-bottom: -2rem;
+    padding-top: 2.25rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display:block;
+}
+#home {
+    margin-left: 75px;
+    height:150px;
 }

@@ -26,6 +26,8 @@ function generate() {
     document.getElementById("genBut").style.display = "none";
     document.getElementById("summary").style.display = "none";
     document.getElementById("form").style.display = "inline";
+    document.getElementById("navigation").style.display = "none";
+
 }
 
 function back() {
@@ -53,6 +55,8 @@ function backk () {
     document.getElementById("genBut").style.display = "inline";
     document.getElementById("summary").style.display = "block";
     document.getElementById("error").style.display = "none";
+    document.getElementById("navigation").style.display = "block";
+
 
 }
 
@@ -73,6 +77,8 @@ function finish() {
     document.getElementById("w4").style.display = "none";
     document.getElementById("d4").style.display = "none";
     document.getElementById("summary").style.display = "block";
+    document.getElementById("navigation").style.display = "block";
+
 }
 
 function focus() {
@@ -82,7 +88,6 @@ function focus() {
 }
 
 function flow () {
-    focus();
     var e = document.getElementById("focus-choice");
     var foc = e.options[e.selectedIndex].text;
     var radios = document.querySelectorAll('input[type="radio"]:checked');
@@ -91,6 +96,7 @@ function flow () {
         document.getElementById("error").style.display = "block";
     } else {
         document.getElementById("error").style.display = "none";
+        focus();
         closeForm();  
         displayWork();
     }
