@@ -107,10 +107,29 @@ h2{
 }
 
 h3 {
-    margin: 5px;
+    margin: 3px;
 }
 input{
-    margin: 5px;
+    margin: 3px;
+}
+
+#navigation {
+    background-color: bisque;
+    height: 220px;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    margin-bottom: -2rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display:block;
+}
+#home, #diet, #exercise, #slumber {
+    margin-left: 33px;
+    height:170px;
+    padding:1rem;
 }
 
 @media (max-width: 600px) {
