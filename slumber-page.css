@@ -106,7 +106,10 @@ h2{
     align-items: center;
 }
 
-h3, input{
+h3 {
+    margin: 5px;
+}
+input{
     margin: 5px;
 }
 

@@ -16,22 +16,12 @@ homeClick.addEventListener("click", (e) => {
      window.location = 'home.html';   
 })
 
-function change() 
-{
-    var elem = document.getElementById("name");
-    if (elem.value == 'Drowsy') elem.value = "Sleep Advice";
-    if (elem.value == 'Normal') elem.value = "Basic Advice";
-    else elem.value == "Good Job ... No advice needed"
-    
-}
-
 document.getElementById("advice").addEventListener("click", function(){
-    var elem = document.getElementById("level1").checked;
-
+    console.log("check")
     if(document.getElementById("level1").checked)
-        document.getElementById("advice").innerHTML = "s (Breathe IN)";
+        document.getElementById("advice").innerHTML = "Try sleeping earlier than usual and take melatonin.";
     if(document.getElementById("level2").checked)
-        document.getElementById("advice").innerHTML = "s (HOLD Breath)";
+        document.getElementById("advice").innerHTML = "Nice! Try and put your phone away before getting into bed.";
     if(document.getElementById("level3").checked)
-        document.getElementById("advice").innerHTML = "s (Breathe OUT)";
+        document.getElementById("advice").innerHTML = "Great job! Keep up the sleep.";
 });
