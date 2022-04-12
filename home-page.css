@@ -88,4 +88,19 @@ button{
     
     }
 
-
+    #navigation {
+        background-color: bisque;
+        height: 220px;
+        border-bottom-right-radius: 4rem;
+        border-bottom-left-radius: 4rem;
+        margin-bottom: -2rem;
+        padding-top: 2.25rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display:block;
+    }
+    #home, #diet, #exercise, #slumber {
+        margin-left: 75px;
+        height:150px;
+    }

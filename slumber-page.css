@@ -1,17 +1,17 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url('/fonts/Lato-Regular.ttf');
+    src: url('./fonts/Lato-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Lato-Light';
-    src: url('/fonts/Lato-Light.ttf');
+    src: url('./fonts/Lato-Light.ttf');
 }
 
 @font-face {
     font-family: 'Lato-Thin';
-    src: url('/fonts/Lato-Thin.ttf');
+    src: url('./fonts/Lato-Thin.ttf');
 }
 
 body {
@@ -107,7 +107,10 @@ h2{
 }
 
 h3 {
-    margin: 5px;
+    font-family: 'Lato-Bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 input{
     margin: 5px;

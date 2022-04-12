@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-1scale=1.0">
     <title>Slumber</title>
     <link rel="stylesheet" href="slumber-page.css">
-    <script defer src="slumber-page.js"></script>
+    <script defer src="./slumber-page.js"></script>
+    <script defer src="./chart.min.js"></script>
     
     <style>
         * {
@@ -52,14 +53,15 @@
                   <canvas id="sleepChart"></canvas>
                 </div>
               </div>
-              <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              
+              <script type="text/javascript" src="./chart.min.js"></script>
               <script>
               const labels =  ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
               const data = {
                 labels: labels,
                 datasets: [{
                   label: 'Daily Sleep',
-                  data: [10, 6, 8, 7, 5, 9, 11],
+                  data: [9, 6, 8, 7, 5, 9, 10],
                   backgroundColor: [
                     'rgba(255, 26, 104, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
