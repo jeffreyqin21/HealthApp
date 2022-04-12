@@ -5,6 +5,11 @@ var elem = document.getElementById('timer');
 
 var timerId = setInterval(countdown, 1000);
 
+
+
+
+
+
 function main () {
     days();
     document.querySelector("#genBut").onclick = generate;
@@ -14,10 +19,7 @@ function main () {
     document.querySelector("#back").onclick = back;
 
 
-
 }
-
-    
 
 
 

@@ -292,7 +292,7 @@ function countdown() {
     width: 100%;
     display:block;
 }
-#home {
+#home, #diet, #exercise, #slumber {
     margin-left: 75px;
     height:150px;
 }
