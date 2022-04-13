@@ -20,23 +20,9 @@
     src: url('/fonts/Lato-Thin.ttf');
 }
 
-body {
-  overflow-y: none;
-  width: 100%;
-  background-color: rgb(233, 231, 231);
-}
 
 #doggo {
     margin-top: 5rem;
-}
-
-#header {
-    background-color:rgb(11, 123, 234);
-    height: 250px;
-    border-top-right-radius: 4rem;
-    border-top-left-radius: 4rem;
-    margin-top: -2rem;
-    text-align: center;
 }
 
 #pump {
@@ -280,19 +266,45 @@ function countdown() {
 
 
 */
+
 #navigation {
     background-color: bisque;
     height: 220px;
     border-bottom-right-radius: 4rem;
     border-bottom-left-radius: 4rem;
     margin-bottom: -2rem;
-    padding-top: 2.25rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
     position: fixed;
     bottom: 0;
     width: 100%;
     display:block;
 }
 #home, #diet, #exercise, #slumber {
-    margin-left: 75px;
-    height:150px;
+    margin-left: 33px;
+    height:170px;
+    padding:1rem;
 }
+/* update this based on which icon you want to darken for the page */
+#exercise{
+    background-color: rgb(240, 214, 183);
+}
+
+
+
+/* background + header */
+body {
+    overflow-y: none;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+  }
+  
+  
+  #header {
+      background-color:rgb(11, 123, 234);
+      height: 250px;
+      border-top-right-radius: 4rem;
+      border-top-left-radius: 4rem;
+      margin-top: -2rem;
+      text-align: center;
+  }

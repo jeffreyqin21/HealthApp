@@ -1,16 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-1scale=1.0">
+    <meta name="viewport" input="width=device-width" />
     <title>Home</title>
     <link rel="stylesheet" href="home-page.css">
     <script defer src="home-page.js"></script>
 </head>
 
 <body>
-   
         <div id="header">
-            <h1 id="login-header" style="color:beige;">Good Morning!</h1>
+            <h1 id="pump">Good Morning!</h1>
         </div>
         
         
@@ -34,24 +35,20 @@
         <h3 id= "countdown">Improve your thinking in just 60 seconds.</h3>
         <div align = "center"> 
         <button type = "button" id = "gameStart">Start timer</button>
-        <h3 id = "blank"> </h3>
+       
         
         <h1 id="end-header">Enjoy your day!</h1>
+        </div>
 
-        <body>
-            <div class="center">
-               
-                <img src="icons/homeCurrent.png"  id = "homeClick" width="95" height="95">
-                <img src="icons/diet.png" id = "dietClick" width="95" height="95">
-                <img src="icons/exercise.png"  id = "exerciseClick" width="95" height="95">
-                <img src="icons/slumber.png" id = "slumberClick" width="95" height="95">
-
-            </div>
-        </body>
-
-
-   
 </body>
+
+<div id="navigation">
+    <img onclick="window.location.replace('home.html')" id="home" src="smart-house.png" alt="home" >
+    <img onclick="window.location.replace('diet.html')" id="diet" src="food.png" alt="home">
+    <img onclick="window.location.replace('exercise.html')" id="exercise" src="gym.png" alt="home">
+    <img onclick="window.location.replace('slumber.html')" id="slumber" src="bed.png" alt="home">
+
+</div>
 
 </html>
 

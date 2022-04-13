@@ -8,13 +8,15 @@ const newQuote = document.getElementById("newQuote");
 const fact = document.getElementById("fact");
 const newFact = document.getElementById("newFact");
 const timer = document.getElementById("gameStart");
-const nameTag = document.getElementById("login-header");
+const nameTag = document.getElementById("pump");
 var now = new Date();
 
+if(now.getHours() < 12)
+    nameTag.innerHTML = ("Good Morning, ") + localStorage.getItem('name') 
 if(now.getHours() > 12 && now.getHours() <= 17)
-    nameTag.innerHTML = ("Good Afternoon!")
-if(now.getHours >= 18 )
-    nameTag.innerHTML = ("Good Evening!")
+    nameTag.innerHTML = ("Good Afternoon, ") + localStorage.getItem('name')
+if(now.getHours() >= 18)
+    nameTag.innerHTML = ("Good Evening, ") + localStorage.getItem('name')
 
 
 
@@ -103,16 +105,4 @@ document.getElementById("gameStart").addEventListener("click", function(){
 });
 
 
-dietClick.addEventListener("click", (e) => {
-    window.location = 'diet.html';
-})
-exerciseClick.addEventListener("click", (e) => {
-    window.location = 'exercise.html';
-})
-slumberClick.addEventListener("click", (e) => {
-    window.location = 'slumber.html';
-})
-homeClick.addEventListener("click", (e) => {
-    window.location = 'home.html';
-})
 

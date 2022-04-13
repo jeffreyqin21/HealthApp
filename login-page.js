@@ -12,8 +12,13 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
     
     if ((username === "Bob" || username === "Sally") && password === "434") {
-       
-        window.location = 'home.html';
+        if(username === "Bob")
+            localStorage.setItem('name', "Bob")
+        else 
+            localStorage.setItem('name', "Sally")
+        console.log("succ")
+        window.location = './home.html';
+
     } else {
         loginErrorMsg.style.opacity = 1;
     }
