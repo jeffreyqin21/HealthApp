@@ -16,36 +16,13 @@ function main () {
     document.querySelector("#finish").onclick = finish;
     document.querySelector("#backk").onclick = backk;
     document.querySelector("#back").onclick = back;
+    
     document.querySelector("#timer").onclick = start;
     document.querySelector("#stop").onclick = stop;
 
-
-}
-
-function stop () {
-    document.getElementById("countdown").innerHTML = ""
-    clearInterval(check);
-    check = null;
-    document.getElementById("timer").style.display = "block";
-
-
 }
 
 
-function start () {
-    var timeleft = 60;
-    if (check == null) {
-        check = setInterval(function function1(){
-    document.getElementById("countdown").innerHTML = timeleft
-    document.getElementById("timer").style.display = "none";
-    timeleft -= 1;
-    if(timeleft <= 0){
-        document.getElementById("countdown").innerHTML = "Good Job!"
-        stop();
-    }
-    }, 1000);
-    }
-}
 
 
 function days() {
@@ -63,12 +40,35 @@ function generate() {
 
 }
 
+    function stop () {
+        document.getElementById("countdown").innerHTML = ""
+        clearInterval(check);
+        check = null;
+        document.getElementById("timer").style.display = "block";
+    
+    
+    }
+    
+    
+    function start () {
+        var timeleft = 60;
+        if (check == null) {
+            check = setInterval(function function1(){
+        document.getElementById("countdown").innerHTML = timeleft
+        document.getElementById("timer").style.display = "none";
+        timeleft -= 1;
+        if(timeleft <= 0){
+            document.getElementById("countdown").innerHTML = "Good Job!"
+            stop();
+        }
+        }, 1000);
+        }
+    }
 function back() {
     document.getElementById("genBut").style.display = "none";
     document.getElementById("summary").style.display = "none";
     document.getElementById("form").style.display = "inline";
     document.getElementById("back").style.display = "none";
-    document.getElementById("rest").style.display = "none";
     document.getElementById("finish").style.display = "none";
     document.getElementById("r1").style.display = "none";
     document.getElementById("r2").style.display = "none";
@@ -82,6 +82,12 @@ function back() {
     document.getElementById("d3").style.display = "none";
     document.getElementById("w4").style.display = "none";
     document.getElementById("d4").style.display = "none";
+    document.getElementById("timer").style.display = "none";
+    document.getElementById("instr").style.display = "none";
+    document.getElementById("countdown").style.display = "none";
+    document.getElementById("stop").style.display = "none";
+    
+
 }
 
 function backk () {
@@ -97,7 +103,6 @@ function backk () {
 function finish() {
     document.getElementById("back").style.display = "none";
     document.getElementById("finish").style.display = "none";
-    document.getElementById("rest").style.display = "none";
     document.getElementById("genBut").style.display = "inline";
     document.getElementById("r1").style.display = "none";
     document.getElementById("r2").style.display = "none";
@@ -111,6 +116,10 @@ function finish() {
     document.getElementById("d3").style.display = "none";
     document.getElementById("w4").style.display = "none";
     document.getElementById("d4").style.display = "none";
+    document.getElementById("timer").style.display = "none";
+    document.getElementById("instr").style.display = "none";
+    document.getElementById("countdown").style.display = "none";
+    document.getElementById("stop").style.display = "none";
     document.getElementById("summary").style.display = "block";
     document.getElementById("navigation").style.display = "block";
 
@@ -152,7 +161,11 @@ function displayWork() {
     org(foc, level);
     document.getElementById("back").style.display = "inline";
     document.getElementById("finish").style.display = "inline";
-    document.getElementById("rest").style.display = "inline";
+    document.getElementById("timer").style.display = "block";
+    document.getElementById("instr").style.display = "block";
+    document.getElementById("countdown").style.display = "block";
+    document.getElementById("stop").style.display = "block";
+
     document.getElementById("w1").style.display = "block";
     document.getElementById("d1").style.display = "block";
     document.getElementById("w2").style.display = "block";
