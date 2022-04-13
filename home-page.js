@@ -8,35 +8,49 @@ const newQuote = document.getElementById("newQuote");
 const fact = document.getElementById("fact");
 const newFact = document.getElementById("newFact");
 const timer = document.getElementById("gameStart");
-const nameTag = document.getElementById("login-header");
+const nameTag = document.getElementById("pump");
+var now = new Date();
 
-nameTag.innerHTML = "Welcome" + document.cookie;
+if(now.getHours() < 12)
+    nameTag.innerHTML = ("Good Morning, ") + localStorage.getItem('name') 
+if(now.getHours() > 12 && now.getHours() <= 17)
+    nameTag.innerHTML = ("Good Afternoon, ") + localStorage.getItem('name')
+if(now.getHours() >= 18)
+    nameTag.innerHTML = ("Good Evening, ") + localStorage.getItem('name')
+
+
 
 let a = Math.round(Math.random() * 3 + 1);
 let y = Math.round(Math.random() * 5 + 1)
 let time = 60;
 
 if(a == 1)
-    quote.innerHTML = "\"It always seems impossible until it's done.\" -Nelson Mandela";
+    quote.innerHTML = "\“Stay hungry. Stay foolish.\” – Steve Jobs";
 if(a == 2)
-    quote.innerHTML = "\"If you can dream it, you can do it.\" -Walt Disney";
+    quote.innerHTML = "\"If you can dream it, you can do it.\" - Walt Disney";
 if(a == 3)
-    quote.innerHTML = "\"If you fell down yesterday, stand up today.\" -H. G. Wells";
+    quote.innerHTML = "\“Impossible is for the unwilling.\” - John Keats"
 if(a == 4)
-    quote.innerHTML = "\"Don't watch the clock; do what it does. Keep going.\" -Sam Levenson";
+    quote.innerHTML = "\“Keep going. Be all in.\” – Bryan Hutchinson"
 
 if(y == 1)
-    fact.innerHTML = "dark chocolate has huge health benefits?";
+    fact.innerHTML = "Dark chocolate has huge health benefits.";
 if(y == 2)
-    fact.innerHTML = "broccoli contains more protein than steak?";
+    fact.innerHTML = "Broccoli contains more protein than steak.";
 if(y == 3)
+<<<<<<< HEAD
     fact.innerHTML = "pecans are rich with antioxidants?";
 if(y == 4) 
     fact.innerHTML = "exercising improves brain performance?";
+=======
+    fact.innerHTML = "Pecans are rich with antioxidants.";
+if(y == 4)
+    fact.innerHTML = "Exercising improves brain performance.";
+>>>>>>> 881f510adaec9ae284f2550ff5ffc4f6f8aac38a
 if(y == 5)
-    fact.innerHTML = "exercise prevents signs of aging?";
+    fact.innerHTML = "Exercise prevents signs of aging.";
 if(y == 6)
-    fact.innerHTML = "workouts can improve the look of your skin?";
+    fact.innerHTML = "Workouts can improve the look of your skin.";
 
 
 newQuote.addEventListener("click", (e) => {
@@ -45,13 +59,13 @@ newQuote.addEventListener("click", (e) => {
         b = Math.round(Math.random() * 3 + 1);
     a = b;
     if(a == 1)
-        quote.innerHTML = "\"It always seems impossible until it's done.\" - Nelson Mandela";
+        quote.innerHTML = "\“Stay hungry. Stay foolish.\” – Steve Jobs";
     if(a == 2)
-        quote.innerHTML = "\"If you can dream it, you can do it.\" -Walt Disney";
+        quote.innerHTML = "\"If you can dream it, you can do it.\" - Walt Disney";
     if(a == 3)
-        quote.innerHTML = "\"If you fell down yesterday, stand up today.\" -H. G. Wells";
+        quote.innerHTML = "\“Impossible is for the unwilling.\” - John Keats"
     if(a == 4)
-        quote.innerHTML = "\"Don't watch the clock; do what it does. Keep going.\" -Sam Levenson";
+        quote.innerHTML = "\“Keep going. Be all in.\” – Bryan Hutchinson";
     
 })
 
@@ -61,17 +75,17 @@ newFact.addEventListener("click", (e) => {
         z = Math.round(Math.random() * 5 + 1);
     y = z;
     if(y == 1)
-        fact.innerHTML = "dark chocolate has huge health benefits?";
+        fact.innerHTML = "Dark chocolate has huge health benefits.";
     if(y == 2)
-        fact.innerHTML = "droccoli contains more protein than steak?";
+        fact.innerHTML = "Broccoli contains more protein than steak.";
     if(y == 3)
-        fact.innerHTML = "decans are rich with antioxidants?";
+        fact.innerHTML = "Pecans are rich with antioxidants.";
     if(y == 4)
-        fact.innerHTML = "exercising improves brain performance?";
+        fact.innerHTML = "Exercising improves brain performance.";
     if(y == 5)
-        fact.innerHTML = "exercise prevents signs of aging?";
+        fact.innerHTML = "Exercise prevents signs of aging.";
     if(y == 6)
-        fact.innerHTML = "workouts can improve the look of your skin?";
+        fact.innerHTML = "Workouts can improve the look of your skin.";
     
 })
 
@@ -97,16 +111,4 @@ document.getElementById("gameStart").addEventListener("click", function(){
 });
 
 
-dietClick.addEventListener("click", (e) => {
-     window.location = 'diet.html';   
-})
-exerciseClick.addEventListener("click", (e) => {
-     window.location = 'exercise.html';   
-})
-slumberClick.addEventListener("click", (e) => {
-     window.location = 'slumber.html';   
-})
-homeClick.addEventListener("click", (e) => {
-     window.location = 'home.html';   
-})
 

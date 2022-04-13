@@ -15,68 +15,296 @@
     src: url('/fonts/Lato-Light.ttf');
 }
 
-body {
-  overflow-y: none;
-  width: 100%;
-  background-color: rgb(233, 231, 231);
+@font-face {
+    font-family: 'Lato-Thin';
+    src: url('/fonts/Lato-Thin.ttf');
 }
 
-#header {
-    background-color: darkblue;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border-top-right-radius: 3rem;
-    border-top-left-radius: 3rem;
 
+#doggo {
+    margin-top: 5rem;
 }
 
-#focus {
+#pump {
     font-family: 'Lato';
     font-size: 60px;
     justify-content: center;
     display: flex;
     position: static;
-    color: white;
+    color: bisque;
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+#date, #focus {
+    font-size: 35px;
+    color: bisque;
+    text-align: center;
     margin-top: 0rem;
+    display: inline-block;
+   
 }
 
 #date {
     font-family: 'Lato-Light';
-    font-size: 40px;
-    justify-content: center;
-    display: flex;
-    position: static;
-    color: beige;
-    margin-bottom: .5rem;
-    margin-top: 0rem;
-    padding-top: .5rem;
+    padding-right: 1rem;
 }
 
-/* #update {
+#focus {
     font-family: 'Lato';
-    font-size: 30px;
-    background-color: rgb(232, 224, 224);
-    color: rgb(80, 77, 77);
-    border-radius: .7rem;
-    border-width: .25rem;
-    margin-left: 45rem;
-    margin-top: 50rem;
 }
-    <input type="button" class="button" id="update" value="Start Workout">
+
+#submit, #backk {
+    display: inline;
+    margin: 0 auto;
+    height: 53px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 35px;
+    color:darkblue;
+    border: .25rem solid cornflowerblue;
+    border-radius: 1rem;
+    width: 450px;
+
+}
+
+select {
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: x-large;
+}
 
 
- #myProgress {
+
+
+#top {
+    padding-top: 2rem;
+    justify-items: center;
+    text-align: center;
+
+}
+
+#daily {
+    width: 600px;
+    padding: 0rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    justify-items: center;
+}
+
+#genBut{
+    font-family: 'Lato-Light';
+    font-size: 45px;
+    color:darkblue;
+    border: .25rem solid cornflowerblue;
+    display:inline;
+    border-radius: 1rem;
+    padding: .4rem;
+    margin-top: 5rem;
+    width: 450px;
+    margin-bottom: 2rem;
+}
+
+
+#armbeg {
+    padding-top: 2rem;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+#w1, #w2, #w3, #w4 {
+    display: none;
+    font-family: 'Lato';
+    font-size: 38px;
+    color:darkblue;
+    margin-bottom: .25rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+#r1,#r2,#r3,#r4 {
+    display: none;
+    font-family: 'Lato';
+    font-size: 32px;
+    color:brown;
+    margin-top: 1.5rem;
+}
+
+#d1, #d2, #d3, #d4 {
+    display: none;
+    font-family: 'Lato';
+    font-size: 35px;
+    color:rgb(204, 121, 43);
+    margin: 0 auto;
+    margin-top: 0rem;
+
+}
+#focsel {
+    margin-top: 3rem;
+}
+
+#w1 {
+    margin-top: 0rem;
+
+}
+#error {
+    border: .25rem solid red;
+    padding: 1rem;
+    width: 500px;
+    font-family: 'Lato';
+    display:none;
+    font-size: 35px;
+    color:red;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+#back, #finish {
+    display: none;
+    margin: 0 auto;
+    height: 53px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 35px;
+    color:darkblue;
+    border: .25rem solid cornflowerblue;
+    border-radius: 1rem;
+    width: 450px;
+
+}
+
+#rest {
+    display: none;
+    margin: 0 auto;
+    height: 53px;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 35px;
+    color:brown;
+    border-color:rgb(236, 117, 6);
+    border: .25rem solid ;
+    border-radius: 1rem;
+    width: 450px;
+
+}
+#timer {
+    display: none;
+    margin: 0 auto;
+    height: 53px;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 35px;
+}
+#form {
+    display:none;
+    font-family: 'Lato';
+    font-size: 40px;
+    text-align: center;
+}
+
+legend {
+    margin-bottom: .9rem;
+    color:darkblue;
+    font-size: 50px;
+
+}
+
+.red {
+    font-family: 'Lato';
+    font-size: 40px;
+    color:cornflowerblue;
+    vertical-align: middle;
+}
+
+input[type=radio] {
+    transform: scale(2.5);
+    margin-left: 2rem;
+    margin-right: .6rem;
+}
+
+#summary{
+    width:500px;
+    margin: 0 auto;
+    margin-top: 7rem;
+
+    justify-items: center;
+    font-family: 'Lato';
+    font-size: 40px;
+
+}
+
+input[type=checkbox]{
+    transform: scale(2.5);
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+#sumL {
+    font-family: 'Lato';
+    font-size: 50px;
+    color:cornflowerblue;
+    vertical-align: middle;
+}
+
+
+
+/* CSS FOR FOOTER ETC 
+function countdown() {
+    document.getElementById("rest").style.display = "none";
+      if (timeLeft == -1) {
+        document.getElementById("rest").style.display = "block";
+      } else {
+        elem.innerHTML = timeLeft + ' seconds remaining';
+        timeLeft--;
+      }
+    }
+
+
+*/
+
+#navigation {
+    background-color: bisque;
+    height: 220px;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    margin-bottom: -2rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    background-color: grey;
+    display:block;
+}
+#home, #diet, #exercise, #slumber {
+    margin-left: 33px;
+    height:170px;
+    padding:1rem;
+}
+/* update this based on which icon you want to darken for the page */
+#exercise{
+    background-color: rgb(240, 214, 183);
+}
+
+
+
+/* background + header */
+body {
+    overflow-y: none;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
   }
   
-  #myBar {
-    width: 1%;
-    height: 50px;
-    background-color: blue;
+  
+  #header {
+      background-color:rgb(11, 123, 234);
+      height: 250px;
+      border-top-right-radius: 4rem;
+      border-top-left-radius: 4rem;
+      margin-top: -2rem;
+      text-align: center;
   }
-
-  <div id="myProgress">
-        <div id="myBar"></div>
-      </div>
-  */

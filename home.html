@@ -1,13 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-1scale=1.0">
+    <meta name="viewport" input="width=device-width" />
     <title>Home</title>
     <link rel="stylesheet" href="home-page.css">
     <script defer src="home-page.js"></script>
 </head>
 
 <body>
+<<<<<<< HEAD
     <main id="main-holder">
         <h1 id="login-header">Welcome!</h1>
         <h2 id ="quote-header">Here's a quote to help you power through:</h2>
@@ -17,42 +20,55 @@
         <h2 id ="fact-header">Did you know that...</h2>
         <h3 id = "fact"> </h3>
         <button type = "button" id = "newFact">Click for a new fact</button>
+=======
+        <div id="header">
+            <h1 id="pump">Good Morning!</h1>
+        </div>
+        
+        
+        
+        <h2 id ="quote-header">Motivational quote:</h2>
+        <h3 id = "quote"> </h3>
+        <button type = "button" id = "newQuote">Click For More Motivation</button>
+        
+        <h3 id = "blank"> </h3>
+>>>>>>> 881f510adaec9ae284f2550ff5ffc4f6f8aac38a
 
+        <h2 id ="fact-header">Did You Know...</h2>
+        <h3 id = "fact"> </h3>
+        <button type = "button" id = "newFact">Click for a Fun Fact</button>
+        <h3 id = "blank"> </h3>
+        
         <h2 id ="mind-header">Begin a mindfulness session?</h2>
+<<<<<<< HEAD
         <h3 id= "countdown">60 (Breathe in for 4, Hold for 3, Breathe Out for 3)</h3>
         <button type = "button" id = "gameStart">Start Timer</button> 
+=======
+        <h3 id= "countdown">Improve your thinking in just 60 seconds.</h3>
+        <div align = "center"> 
+        <button type = "button" id = "gameStart">Start timer</button>
+       
+>>>>>>> 881f510adaec9ae284f2550ff5ffc4f6f8aac38a
         
         <h1 id="end-header">Enjoy your day!</h1>
+        </div>
 
-        <body>
-            <div class="center">
-               
-                <img src="icons/homeCurrent.png"  id = "homeClick" width="100" height="100">
-                <img src="icons/diet.png" id = "dietClick" width="100" height="100">
-                <img src="icons/exercise.png"  id = "exerciseClick" width="100" height="100">
-                <img src="icons/slumber.png" id = "slumberClick" width="100" height="100">
-                
+</body>
 
-            </div>
-        </body>
+<div id="navigation">
+    <img onclick="window.location.replace('home.html')" id="home" src="smart-house.png" alt="home" >
+    <img onclick="window.location.replace('diet.html')" id="diet" src="food.png" alt="home">
+    <img onclick="window.location.replace('exercise.html')" id="exercise" src="gym.png" alt="home">
+    <img onclick="window.location.replace('slumber.html')" id="slumber" src="bed.png" alt="home">
 
-
+<<<<<<< HEAD
     </main>
 </body>
+=======
+</div>
+>>>>>>> 881f510adaec9ae284f2550ff5ffc4f6f8aac38a
 
 </html>
 
-<script>
-    let cTime = 120;
-    function myTimer(){
-    if(cTime == 0){
-    document.getElementById("countdown").innerHTML = "Resend code";
-    } else{
-    document.getElementById("countdown").innerHTML = cTime;
-    cTime = cTime - 1;
-    setTimeout(myTimer, 1000);
-  }
-}
-</script>
 
 

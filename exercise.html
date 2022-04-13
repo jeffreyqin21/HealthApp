@@ -12,13 +12,107 @@
 
 <body>
     <div id="header">
-        <h2 id="date">Today's Focus</h2>
-        <h1 id="focus"></h1> 
+    <h1 id="pump">Get Active!</h1>
+    <h2 id="date">Today's Focus:</h2>
+    <h1 id="focus">You</h1>
     </div>
-                                  
+        
+        
+    <div id="top">
+       <form id="form">
+            <legend id ="focsel"><strong>Select Focus</strong></legend> 
+            <select id="focus-choice" required> 
+                <option id="place" value="" disabled selected hidden>Please Choose...</option>
+                <option id="op">Legs</option>
+                <option id="op">Arms</option>
+                <option id="op">Chest</option>
+                <option id="op">Cardio</option>
+                <option id="op">Back</option>
+                <option id="op">HIIT</option>
+
+
+            </select> 
+            <br>
+            <br>
+             <legend><strong>Select Level</strong></legend> 
+             <input type="radio" name="level" id="level" value="Beginner" >
+             <label class="red"> Beginner</label>
+             <br>
+             <input type="radio" name="level" id="level" value="Intermediate">
+             <label class="red"> Intermediate</label>
+             <br>
+             <input type="radio" name="level" id="level" value="Advanced">
+             <label class="red"> Advanced</label>
+             <br>
+             <br>
+             <br>
+             <input id="backk" type="button" value="Back" /> 
+             <input id="submit" type="button" value="Start Workout" /> 
+             <img id="doggo" src="dog.jpg" alt="dog" height="400px">
+       </form>
+        <h2 id="error">Error: Please fill out all fields. As a reminder, the current working options for Focus in this Phase are "Arms", "Legs", and "HIIT".</h2>
+
+       <div id="summary">
+        <fieldset>
+        <legend id= "checklist"><strong>Daily Checklist</strong></legend> 
+        <input type="checkbox" name="worked"> 
+        <label id="sumL">Workout</label> 
+        <br>
+        <input type="checkbox" name="steps"> 
+        <label id="sumL">10,000 Steps</label> 
+        <br>
+        <input type="checkbox" name="water"> 
+        <label id="sumL">64 Oz. Water</label>
+        <br>
+        <input type="checkbox" name="water"> 
+        <label id="sumL">Something</label>
+        <br>
+        <input type="checkbox" name="water"> 
+        <label id="sumL">Current Weight</label>
+        
+    </fieldset> 	                       
+       </div>
+       <input id="genBut" type="button" value="Generate Workout"> 
+       
+       <div id="armBeg"> 
+            <h3 id="w1">workout 1</h3>
+            <p id="d1">desc</p>
+            <h4 id="r1">REST</h4>
+            <h3 id="w2">workout 2</h3>
+            <p id="d2">desc</p>
+            <h4 id="r2">REST</h4>
+            <h3 id="w3">workout 3</h3>
+            <p id="d3">desc</p>
+            <h4 id="r3">REST</h4>
+            <h3 id="w4">workout 4</h3>
+            <p id="d4">desc</p>
+            <h4 id="r4">REST</h4>
+            <br>
+            <br>
+            <div id="timer">
+             <input id="rest" type="button" value="Start Rest Timer" /> 
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input id="back" type="button" value="Back" /> 
+            <input id="finish" type="button" value="Finish Workout" /> 
+       </div>
+       <div id="timer">
+
+       </div>
+       
+    </div>
+
     
-     
-     
     
-  
 </body>
+
+<div id="navigation">
+    <img onclick="window.location.replace('home.html')" id="home" src="smart-house.png" alt="home" >
+    <img onclick="window.location.replace('diet.html')" id="diet" src="food.png" alt="home">
+    <img onclick="window.location.replace('exercise.html')" id="exercise" src="gym.png" alt="home">
+    <img onclick="window.location.replace('slumber.html')" id="slumber" src="bed.png" alt="home">
+
+</div>

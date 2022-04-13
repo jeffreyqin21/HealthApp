@@ -12,16 +12,20 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
     
     if ((username === "Bob" || username === "Sally") && password === "434") {
-       
-        alert("You have successfully logged in.");
-        window.location = 'home.html';
+        if(username === "Bob")
+            localStorage.setItem('name', "Bob")
+        else 
+            localStorage.setItem('name', "Sally")
+        console.log("succ")
+        window.location = './home.html';
+
     } else {
         loginErrorMsg.style.opacity = 1;
     }
 })
 
 loginForm.addEventListener("click", (e) => {
-   key.style.display = "inline"
+    key.style.display = "inline"
 })
 
 clickOut.addEventListener("click", (e) => {
