@@ -8,15 +8,13 @@ const newQuote = document.getElementById("newQuote");
 const fact = document.getElementById("fact");
 const newFact = document.getElementById("newFact");
 const timer = document.getElementById("gameStart");
-const nameTag = document.getElementById("pump");
+const nameTag = document.getElementById("login-header");
 var now = new Date();
 
-if(now.getHours() < 12)
-    nameTag.innerHTML = ("Good Morning, ") + localStorage.getItem('name') 
 if(now.getHours() > 12 && now.getHours() <= 17)
-    nameTag.innerHTML = ("Good Afternoon, ") + localStorage.getItem('name')
-if(now.getHours() >= 18)
-    nameTag.innerHTML = ("Good Evening, ") + localStorage.getItem('name')
+    nameTag.innerHTML = ("Good Afternoon!")
+if(now.getHours >= 18 )
+    nameTag.innerHTML = ("Good Evening!")
 
 
 
@@ -38,15 +36,9 @@ if(y == 1)
 if(y == 2)
     fact.innerHTML = "Broccoli contains more protein than steak.";
 if(y == 3)
-<<<<<<< HEAD
-    fact.innerHTML = "pecans are rich with antioxidants?";
-if(y == 4) 
-    fact.innerHTML = "exercising improves brain performance?";
-=======
     fact.innerHTML = "Pecans are rich with antioxidants.";
 if(y == 4)
     fact.innerHTML = "Exercising improves brain performance.";
->>>>>>> 881f510adaec9ae284f2550ff5ffc4f6f8aac38a
 if(y == 5)
     fact.innerHTML = "Exercise prevents signs of aging.";
 if(y == 6)
@@ -111,4 +103,15 @@ document.getElementById("gameStart").addEventListener("click", function(){
 });
 
 
-
+dietClick.addEventListener("click", (e) => {
+    window.location = 'diet.html';
+})
+exerciseClick.addEventListener("click", (e) => {
+    window.location = 'exercise.html';
+})
+slumberClick.addEventListener("click", (e) => {
+    window.location = 'slumber.html';
+})
+homeClick.addEventListener("click", (e) => {
+    window.location = 'home.html';
+})
