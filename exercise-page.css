@@ -251,6 +251,13 @@ input[type=checkbox]{
     vertical-align: middle;
 }
 
+#sumLW {
+    font-family: 'Lato';
+    font-size: 40px;
+    color:cornflowerblue;
+    vertical-align: middle;
+}
+
 
 
 /* CSS FOR FOOTER ETC 
@@ -267,6 +274,10 @@ function countdown() {
 
 */
 
+#weight { 
+    height:50px; 
+    font-size: 40px;
+}
 #navigation {
     background-color: bisque;
     height: 220px;
