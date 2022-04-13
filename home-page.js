@@ -31,7 +31,7 @@ if(y == 2)
     fact.innerHTML = "broccoli contains more protein than steak?";
 if(y == 3)
     fact.innerHTML = "pecans are rich with antioxidants?";
-if(y == 4)
+if(y == 4) 
     fact.innerHTML = "exercising improves brain performance?";
 if(y == 5)
     fact.innerHTML = "exercise prevents signs of aging?";
