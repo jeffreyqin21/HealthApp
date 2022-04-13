@@ -178,6 +178,20 @@ select {
 
 }
 
+#weightC {
+    margin: 0 auto;
+    margin-top: 2rem;
+    height: 53px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 35px;
+    color:darkblue;
+    border: .25rem solid cornflowerblue;
+    border-radius: 1rem;
+    width: 350px;
+
+}
+
 #rest {
     display: none;
     margin: 0 auto;
