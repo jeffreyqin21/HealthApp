@@ -92,8 +92,8 @@ h2.headertekst{
 }
 .slide {
     position:absolute;
-    bottom: 66%;
-    left: 40%;
+    bottom: 59%;
+    left: 3%;
     right:0;
     margin-right: auto;
     margin-left: auto;
@@ -137,7 +137,7 @@ input[type=radio] {
     margin-left: 2rem;
     margin-right: 0.6rem;
 }
-
+/*
 h1{
     font-family: 'Lato', sans-serif;
     display: flex;
@@ -145,7 +145,7 @@ h1{
     align-items: center;
     text-shadow: 1px 1px 1px #ccc;
     box-shadow: 0 0 1em 1em #ccc;
-}
+}*/
 h2{
     font-family: 'Lato-Bold';
     display: flex;
