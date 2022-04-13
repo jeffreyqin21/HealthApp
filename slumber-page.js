@@ -39,7 +39,7 @@ document.getElementById("advice").addEventListener("click", function(){
     if(document.getElementById("level1").checked)
         document.getElementById("advice").innerHTML = "Try sleeping earlier than usual and take melatonin.";
     if(document.getElementById("level2").checked)
-        document.getElementById("advice").innerHTML = "Nice! Try and put your phone away before getting into bed.";
+        document.getElementById("advice").innerHTML = "Nice but try and put your phone away before getting into bed.";
     if(document.getElementById("level3").checked)
         document.getElementById("advice").innerHTML = "Great job! Keep up the sleep.";
 });
