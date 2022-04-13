@@ -1,0 +1,121 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-1scale=1.0">
+    <title>Diet</title>
+    <link rel="stylesheet" href="home-page.css">
+    <script defer src="diet-page.js"></script>
+</head>
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Lato";
+    }
+    .chartMenu {
+      width: 100vw;
+      height: 40px;
+      background: #1A1A1A;
+      color: rgba(255, 26, 104, 1);
+    }
+    .chartMenu p {
+      padding: 10px;
+      font-size: 20px;
+    }
+    /*page background*/
+    .chartCard { 
+      width: 100vw;
+      height: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* graph outline and background*/
+    .chartBox {
+      width: 700px;
+      padding: 20px;
+      border-radius: 20px;
+      border: solid 3px rgba(255, 26, 104, 1);
+      background: white;
+    }
+  </style>
+
+<div>
+    <canvas id="myChart">
+        <script type="text/javascript" src="./chart.min.js"> </script>
+        <script>
+            const labels = [
+              'January',
+              'February',
+              'March',
+              'April',
+              'May',
+              'June',
+            ];
+          
+            const data = {
+              labels: labels,
+              datasets: [{
+                label: 'My weight progress',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [130, 128, 128, 127, 125, 124, 124],
+              }]
+            };
+          
+            const config = {
+              type: 'line',
+              data: data,
+              options: {
+                scales: {
+                    xAxes: {
+                      title: {
+                        display: true,
+                        text: 'Month',
+                        font: {
+                            size: 15
+                        }
+                      }
+                    },
+                    yAxes: {
+                      title: {
+                      display: true,
+                      text: 'Weight in Pounds',
+                      font: {
+                            size: 15
+                        }
+                      }
+                    },
+                  }
+              }
+            };
+          </script>
+          <script>
+            const myChart = new Chart(
+              document.getElementById('myChart'),
+              config
+            );
+          </script>
+           
+    </canvas>
+</div>
+
+<body>
+    <main id="main-holder">
+        <h1 id="login-header">Diet page!</h1>
+        <body>
+            <div class="center">
+               
+                
+
+            </div>
+        </body>
+
+
+    </main>
+</body>
+
+</html>
+
+
