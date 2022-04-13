@@ -49,7 +49,8 @@
 <body>
     
         <h1 id="header" style ="color: beige">Sleep Tracking</h1>
-        <h2 class="headertekst"> Here is your sleep chart displayed over the past week!</h2>
+        <br>
+        <h2 class="headertekst"> Here is your sleep chart displayed over the past week!</h2><br>
         
               <div class="chartCard">
                 <div class="chartBox">
@@ -134,90 +135,6 @@
               );
               </script>
 
-    <h2 class="headertekst"> Here is your sleep chart displayed over the past week!</h2>
-        
-    <div class="chartCard">
-      <div class="chartBox">
-        <canvas id="sleepChart"></canvas>
-      </div>
-    </div>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-    const labels =  ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-    const data = {
-      labels: labels,
-      datasets: [{
-        label: 'Daily Sleep',
-        data: [10, 6, 8, 7, 5, 9, 11],
-        backgroundColor: [
-          'rgba(255, 26, 104, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-          'rgba(0, 0, 0, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255, 26, 104, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(0, 0, 0, 1)'
-        ],
-        borderWidth: 3
-      }]
-    };
-
-    const config = {
-      type: 'bar',
-      data,
-      options: {
-          plugins: {
-              title: {
-                  display: true,
-                  text: 'User Sleep',
-                  padding: {
-                      top: 5,
-                      bottom: 10
-                  },
-                  color: "blue",
-                  font: {
-                      size: 30
-                  }
-              }
-          },
-        scales: {
-          xAxes: {
-            title: {
-              display: true,
-              text: 'Day of the Week',
-              font: {
-                  size: 15
-              }
-            }
-          },
-          yAxes: {
-            title: {
-            display: true,
-            text: 'Daily Sleep (in hours)',
-            font: {
-                  size: 15
-              }
-            }
-          },
-        }
-      }
-    };
-
-    const sleepChart = new Chart(
-      document.getElementById('sleepChart'),
-      config,
-    );
-    </script>
-
     <form>
       <div class = "slide">
         <div id="slider">
@@ -228,8 +145,9 @@
     </form>
 
   <br>
+  <br><br><br>
    <legend><strong>How did you feel after waking up?</strong></legend> 
-   <input type="radio" name="level" id="level1" value="Drowsy" >
+   <input type="radio" name="level" id="level1" value="Drowsy">
    <label class="red"> Drowsy</label>
    <input type="radio" name="level" id="level2" value="Normal">
    <label class="red"> Normal</label>
@@ -239,12 +157,13 @@
    <br>
    <div class="but" align="center">
     <!-- <button type="button" id="submit">Give Advice</button>-->
-    <input id="submit" type="button" value="Give Advice" /> 
+    <input id="submit" type="button" value="Give Advice"/>
    </div>
               
   <form>
     <div class="txt" align="center">
       <!--start as empty text and then js inputs value depending on button clicked-->
+      <br>
       <h2 id= "advice"></h3>
      </div>
   </form>
