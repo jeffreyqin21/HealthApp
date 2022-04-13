@@ -15,26 +15,81 @@
 }
 
 body {
-  overflow-y: none;
-  width: 100%;
-  background-color: rgb(233, 231, 231);
+    overflow-y: none;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+  }
+
+#pump {
+    font-family: 'Lato';
+    font-size: 60px;
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: bisque;
+    padding-top: 4rem;
+    margin-bottom: 1rem;
 }
+
+  
+#header {
+      background-color:rgb(11, 123, 234);
+      height: 250px;
+      border-top-right-radius: 4rem;
+      border-top-left-radius: 4rem;
+      margin-top: -2rem;
+      text-align: center;
+}
+
+
+#navigation {
+    background-color: bisque;
+    height: 220px;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    margin-bottom: -2rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display:block;
+}
+
+#home, #diet, #exercise, #slumber {
+    margin-left: 33px;
+    height:170px;
+    padding:1rem;
+}
+
+
+#slumber{
+    background-color: rgb(240, 214, 183);
+}
+
+/* @media (max-width: 600px) {
+    body {
+      background-color: pink;
+    
+      background: url(./icons/food.png) repeat 0 0;
+    
+    }
+  }
+
+  
+    .center {
+        position:absolute;
+        bottom:0px;
+    
+    }
+
+
 
 h2.headertekst{
     font-family: 'Lato', sans-serif;
     display: flex;
     text-align: center;
 }
-
-#header {
-    background-color: darkblue;
-    height: 150px;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    margin-top: -2rem;
-    text-align: center;
-}
-
 .slide {
     position:absolute;
     bottom: 37.5%;
@@ -113,23 +168,162 @@ h3 {
     align-items: center;
 }
 input{
-    margin: 5px;
+    margin: 3px;
 }
 
-@media (max-width: 600px) {
-    body {
-      background-color: pink;
-    
-      background: url(./icons/food.png) repeat 0 0;
-    
-    }
-  }
 
-  
-    .center {
-        position:absolute;
-        bottom:0px;
-    
-    }
 
+
+HEREEEE
+ <h2 class="headertekst"> Here is your sleep chart displayed over the past week!</h2>
+        
+              <div class="chartCard">
+                <div class="chartBox">
+                  <canvas id="sleepChart"></canvas>
+                </div>
+              </div>
+              <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script>
+              const labels =  ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+              const data = {
+                labels: labels,
+                datasets: [{
+                  label: 'Daily Sleep',
+                  data: [10, 6, 8, 7, 5, 9, 11],
+                  backgroundColor: [
+                    'rgba(255, 26, 104, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(0, 0, 0, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255, 26, 104, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(0, 0, 0, 1)'
+                  ],
+                  borderWidth: 3
+                }]
+              };
+          
+              const config = {
+                type: 'bar',
+                data,
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'User Sleep',
+                            padding: {
+                                top: 5,
+                                bottom: 10
+                            },
+                            color: "blue",
+                            font: {
+                                size: 30
+                            }
+                        }
+                    },
+                  scales: {
+                    xAxes: {
+                      title: {
+                        display: true,
+                        text: 'Day of the Week',
+                        font: {
+                            size: 15
+                        }
+                      }
+                    },
+                    yAxes: {
+                      title: {
+                      display: true,
+                      text: 'Daily Sleep (in hours)',
+                      font: {
+                            size: 15
+                        }
+                      }
+                    },
+                  }
+                }
+              };
+          
+              const sleepChart = new Chart(
+                document.getElementById('sleepChart'),
+                config,
+              );
+              </script>
+
+              <form>
+                <div class = "slide">
+                  <div id="slider">
+                    <input id="rangeInput" type="range" min="0" max="24" oninput="amount.value=rangeInput.value" />
+                    <input id="amount" type="number" value="12" min="0" max="24" oninput="rangeInput.value=amount.value" />
+                  </div>
+                </div>
+              </form>
+
+            <br>
+             <legend><strong>How did you feel after waking up?</strong></legend> 
+             <input type="radio" name="level" id="level1" value="Drowsy" >
+             <label class="red"> Drowsy</label>
+             <input type="radio" name="level" id="level2" value="Normal">
+             <label class="red"> Normal</label>
+             <input type="radio" name="level" id="level3" value="Rested">
+             <label class="red"> Rested</label>
+             <br>
+             <br>
+             <div class="but" align="center">
+              <!-- <button type="button" id="submit">Give Advice</button>-->
+              <input id="submit" type="button" value="Give Advice" /> 
+             </div>
+                        
+            <form>
+              <div class="txt" align="center">
+                <!--start as empty text and then js inputs value depending on button clicked-->
+                <h2 id= "advice"></h3>
+               </div>
+            </form>
+
+
+
+          <style>
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: "Lato";
+        }
+        .chartMenu {
+          width: 100vw;
+          height: 40px;
+          background: #1A1A1A;
+          color: rgba(255, 26, 104, 1);
+        }
+        .chartMenu p {
+          padding: 10px;
+          font-size: 20px;
+        }
+        /*page background
+        .chartCard { 
+            width: 100vw;
+            height: 300;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          /* graph outline and background
+          .chartBox {
+            width: 700px;
+            padding: 20px;
+            border-radius: 20px;
+            border: solid 3px rgba(255, 26, 104, 1);
+            background: white;
+          }
+        </style>
+*/
 

@@ -57,29 +57,32 @@ h1 {
    
 }
 h2 {
-    font-family: 'Lato-Bold';
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 3rem;
+  font-family: 'Lato';
+  font-size: 40px;
+  color: darkblue;
+  text-align: center;
 }
 
 h3 {
-    font-family: 'Lato-Light';
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: 'Lato';
+  font-size: 40px;
+  color: cornflowerblue;
+  text-align: center;
+  height: 50px;
 }
 button{
     display: inline;
     margin: 0 auto;
-    height: 28px;
+    margin-top: 1rem;
+    height: 53px;
     text-align: center;
     font-family: 'Lato-Light';
-    font-size: 15px;
+    font-size: 35px;
     color:darkblue;
     border: .25rem solid cornflowerblue;
     border-radius: 1rem;
-    width: 200px;
+    width: 450px;
 
 }
 
