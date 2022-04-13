@@ -19,11 +19,29 @@ function main () {
     
     document.querySelector("#timer").onclick = start;
     document.querySelector("#stop").onclick = stop;
+    document.querySelector("#weightC").onclick = graph;
+    document.querySelector("#return").onclick = front;
 
 }
 
 
+function graph() {
+    document.getElementById("return").style.display = "block";
+    document.getElementById("graph").style.display = "block";
+    document.getElementById("genBut").style.display = "none";
+    document.getElementById("summary").style.display = "none";
+    document.getElementById("header").style.display = "none";
 
+}
+
+function front() {
+    document.getElementById("return").style.display = "none";
+    document.getElementById("graph").style.display = "none";
+    document.getElementById("genBut").style.display = "block";
+    document.getElementById("summary").style.display = "block";
+    document.getElementById("header").style.display = "block";
+
+}
 
 function days() {
     const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
