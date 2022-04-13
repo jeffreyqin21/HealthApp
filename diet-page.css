@@ -1,9 +1,3 @@
-@media screen and (max-width: 667px) {
-    .view {
-        width: 375px;
-    }
-}
-
 @font-face {
     font-family: 'Lato';
     src: url('/fonts/Lato-Regular.ttf');
@@ -14,32 +8,31 @@
     src: url('/fonts/Lato-Light.ttf');
 }
 
-body {
-  overflow-y: none;
-  width: 96%;
-  background-color: rgb(233, 231, 231);
-}
-
-#header {
-    background-color: darkblue;
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-    border-top-right-radius:1rem;
-    border-top-left-radius: 1rem;
-
-}
-
-
-#date {
-    font-family: 'Lato-Light';
-    font-size: 40px;
+#pump {
+    font-family: 'Lato';
+    font-size: 60px;
     justify-content: center;
     display: flex;
     position: static;
-    color: beige;
-    margin-bottom: 0rem;
-    margin-top: 1rem;
-    padding-top: 0rem;
+    color: bisque;
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    overflow-y: none;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+  }
+  
+  
+#header {
+      background-color:rgb(11, 123, 234);
+      height: 250px;
+      border-top-right-radius: 4rem;
+      border-top-left-radius: 4rem;
+      margin-top: -2rem;
+      text-align: center;
 }
 
 
@@ -106,14 +99,8 @@ section article.calories div:nth-child(4) span:nth-child(2){
     border-block-color: #0f3460;
 }
 
-.main-holder{
-    position: absolute;
-    left: 2%;
-    top: 55.5%;
-    border-color: #e94560;
-    border-width: 0.5px;
-    border-radius: 1px;
-    border-style: solid;
+#mealsug{
+    text-align: center;
     margin: auto;
     z-index: -1;
     height: 25%;
@@ -121,17 +108,7 @@ section article.calories div:nth-child(4) span:nth-child(2){
 }
 
 
-.center_bottom{
-    position: fixed;
-    bottom: 0;
 
-    margin: auto;
-    width: 100%;
-    border: 1px solid #5d0fe3;
-    padding: 10px;
-    left: 0;
-    right: 0;
-}
 
 .mealplan p{
     left: 90%;
@@ -190,4 +167,29 @@ h3{
     display: flex;
     justify-content: left;
     align-items: center;
+}
+
+
+
+#navigation {
+    background-color: bisque;
+    height: 220px;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    margin-bottom: -2rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display:block;
+}
+#home, #diet, #exercise, #slumber {
+    margin-left: 33px;
+    height:170px;
+    padding:1rem;
+}
+/* update this based on which icon you want to darken for the page */
+#diet{
+    background-color: rgb(240, 214, 183);
 }

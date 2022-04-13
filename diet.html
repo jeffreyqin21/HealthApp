@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-1scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" input="width=device-width" />
     <title>Diet</title>
-    <link rel="stylesheet" href="diet-page.css">
-    <script defer src="diet-page.js"></script>
+    <link rel="stylesheet" href="diet-page.css" type="text/css">
+    <script src="diet-page.js" defer></script>
 </head>
 
 
 
 <body>
     <div id="header">
-        <h2 id="date">Diet</h2>
-        <h1 id="focus"></h1> 
+        <h2 id="pump">Diet</h2>
     </div>
 
     <main class = "bar">
@@ -94,17 +94,15 @@
         <button type = "button" id = "addMeal"> Add meal</button>
 
     </main>
-
-    <div class = "center_bottom">
-        
-        <img src="icons/home.png"  id = "homeClick" width="85" height="85">
-        <img src="icons/dietCurrent.png" id = "dietClick" width="85" height="85">
-        <img src="icons/exercise.png"  id = "exerciseClick" width="85" height="85">
-        <img src="icons/slumber.png" id = "slumberClick" width="85" height="85">
-                
-    </div>
  
 </body>
+<div id="navigation">
+    <img onclick="window.location.replace('home.html')" id="home" src="smart-house.png" alt="home" >
+    <img onclick="window.location.replace('diet.html')" id="diet" src="food.png" alt="home">
+    <img onclick="window.location.replace('exercise.html')" id="exercise" src="gym.png" alt="home">
+    <img onclick="window.location.replace('slumber.html')" id="slumber" src="bed.png" alt="home">
+
+</div>
 
 </html>
 
