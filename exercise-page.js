@@ -1,9 +1,8 @@
 window.onload = main
 let isValid = false;
-var timeLeft = 30;
-var elem = document.getElementById('timer');
+var check =null;
 
-var timerId = setInterval(countdown, 1000);
+const timer = document.getElementById("timer");
 
 
 
@@ -17,12 +16,36 @@ function main () {
     document.querySelector("#finish").onclick = finish;
     document.querySelector("#backk").onclick = backk;
     document.querySelector("#back").onclick = back;
+    document.querySelector("#timer").onclick = start;
+    document.querySelector("#stop").onclick = stop;
+
+
+}
+
+function stop () {
+    document.getElementById("countdown").innerHTML = ""
+    clearInterval(check);
+    check = null;
+    document.getElementById("timer").style.display = "block";
 
 
 }
 
 
-
+function start () {
+    var timeleft = 60;
+    if (check == null) {
+        check = setInterval(function function1(){
+    document.getElementById("countdown").innerHTML = timeleft
+    document.getElementById("timer").style.display = "none";
+    timeleft -= 1;
+    if(timeleft <= 0){
+        document.getElementById("countdown").innerHTML = "Good Job!"
+        stop();
+    }
+    }, 1000);
+    }
+}
 
 
 function days() {
