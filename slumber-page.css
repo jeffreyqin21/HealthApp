@@ -33,15 +33,6 @@ body {
 
   
 #header {
-      background-color:rgb(11, 123, 234);
-      height: 250px;
-      border-top-right-radius: 4rem;
-      border-top-left-radius: 4rem;
-      margin-top: -2rem;
-      text-align: center;
-}
-
-#header {
     background-color:rgb(11, 123, 234);
     height: 250px;
     border-top-right-radius: 4rem;
@@ -49,6 +40,8 @@ body {
     margin-top: -2rem;
     text-align: center;
 }
+
+
 
 
 #navigation {
