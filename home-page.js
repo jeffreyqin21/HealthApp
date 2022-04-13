@@ -67,17 +67,17 @@ newFact.addEventListener("click", (e) => {
         z = Math.round(Math.random() * 5 + 1);
     y = z;
     if(y == 1)
-        fact.innerHTML = "dark chocolate has huge health benefits?";
+        fact.innerHTML = "Dark chocolate has huge health benefits.";
     if(y == 2)
-        fact.innerHTML = "broccoli contains more protein than steak?";
+        fact.innerHTML = "Broccoli contains more protein than steak.";
     if(y == 3)
-        fact.innerHTML = "decans are rich with antioxidants?";
+        fact.innerHTML = "Pecans are rich with antioxidants.";
     if(y == 4)
-        fact.innerHTML = "exercising improves brain performance?";
+        fact.innerHTML = "Exercising improves brain performance.";
     if(y == 5)
-        fact.innerHTML = "exercise prevents signs of aging?";
+        fact.innerHTML = "Exercise prevents signs of aging.";
     if(y == 6)
-        fact.innerHTML = "workouts can improve the look of your skin?";
+        fact.innerHTML = "Workouts can improve the look of your skin.";
     
 })
 
