@@ -135,12 +135,14 @@
                 config,
               );
               </script>
-
+    <br>
+    <legend><strong>Move the slider to input your sleep then click the number box and press enter</strong></legend>
+    <br>
     <form>
       <div class = "slide">
         <div id="slider">
           <input id="rangeInput" type="range" min="0" max="24" oninput="amount.value=rangeInput.value" />
-          <input id="amount" type="number" value="12" min="0" max="24" oninput="rangeInput.value=amount.value" />
+          <input id="amount" type="number" value="8" min="0" max="24" oninput="rangeInput.value=amount.value" />
         </div>
       </div>
     </form>
@@ -168,6 +170,7 @@
       <h2 id= "advice"></h3>
      </div>
   </form>
+  <img id="pic" src="sleep.jpeg" alt="pic" height="400px">
    
 </body>
 

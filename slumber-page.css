@@ -90,9 +90,14 @@ h2.headertekst{
     display: flex;
     text-align: center;
 }
+
+#pic {
+    margin-top: 5rem;
+}
+
 .slide {
     position:absolute;
-    bottom: 59%;
+    bottom: 56%;
     left: 3%;
     right:0;
     margin-right: auto;
