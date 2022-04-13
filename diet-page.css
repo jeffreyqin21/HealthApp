@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('/fonts/Lato-Light.ttf');
+}
+
+#pump {
+    font-family: 'Lato';
+    font-size: 60px;
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: bisque;
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    overflow-y: none;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+  }
+  
+  
+#header {
+      background-color:rgb(11, 123, 234);
+      height: 250px;
+      border-top-right-radius: 4rem;
+      border-top-left-radius: 4rem;
+      margin-top: -2rem;
+      text-align: center;
+}
+
+
+
+section article.calories{
+    height: auto;
+}
+
+section article.calories p{
+    color: #ffffff;
+    padding: 0px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section article.calories div span:nth-child(1){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #0f3460;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+section article.calories div span:nth-child(2){
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #e94560;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+section article.calories div:nth-child(1) span:nth-child(2){
+    width: 100%;
+    animation-delay: 0;
+}
+
+section article.calories div:nth-child(2) span:nth-child(2){
+    width: 90%;
+    animation-delay: 0;
+}
+
+section article.calories div:nth-child(3) span:nth-child(2){
+    width: 60%;
+    animation-delay: 0;
+}
+
+section article.calories div:nth-child(4) span:nth-child(2){
+    width: 20%;
+    animation-delay: 0;
+}
+
+.bar{
+    border: #0f3460;
+    border-block-color: #0f3460;
+}
+
+#mealsug{
+    text-align: center;
+    margin: auto;
+    z-index: -1;
+    height: 25%;
+    width: 49%;
+}
+
+
+
+
+.mealplan p{
+    left: 90%;
+}
+
+.mealplan{
+    position: absolute;
+    left: 52.5%;
+    top: 39%;
+    border-color: #e94560;
+    border-width: 0.5px;
+    border-radius: 3px;
+    border-style: solid;
+    margin: auto;
+    z-index: -1;
+    height: 41.5%;
+    width: 45.2%;
+}
+
+.foodinput{
+    position: absolute;
+    left: 2%;
+    top: 39%;
+    border-color: #e94560;
+    border-width: 0.5px;
+    border-radius: 3px;
+    border-style: solid;
+    margin: auto;
+    height: 15%;
+    width: 49%;
+}
+
+#addMeal{
+    border-radius: 50%;
+    height: 50px;
+    width: 70px;
+   
+}
+
+#newMeal{
+    border-radius: 50%;
+    height: 50px;
+    width: 70px;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Lato-Bold';
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+h3{
+    font-family: 'Lato-Light';
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+
+#navigation {
+    background-color: bisque;
+    height: 220px;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    margin-bottom: -2rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display:block;
+}
+#home, #diet, #exercise, #slumber {
+    margin-left: 33px;
+    height:170px;
+    padding:1rem;
+}
+/* update this based on which icon you want to darken for the page */
+#diet{
+    background-color: rgb(240, 214, 183);
+}

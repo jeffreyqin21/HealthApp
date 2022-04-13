@@ -114,7 +114,7 @@ select {
     padding-top: 2rem;
     justify-items: center;
     text-align: center;
-    
+
 }
 
 #w1, #w2, #w3, #w4 {
@@ -192,14 +192,7 @@ select {
     width: 450px;
 
 }
-#timer {
-    display: none;
-    margin: 0 auto;
-    height: 53px;
-    text-align: center;
-    font-family: 'Lato';
-    font-size: 35px;
-}
+
 #form {
     display:none;
     font-family: 'Lato';
@@ -251,6 +244,13 @@ input[type=checkbox]{
     vertical-align: middle;
 }
 
+#sumLW {
+    font-family: 'Lato';
+    font-size: 40px;
+    color:cornflowerblue;
+    vertical-align: middle;
+}
+
 
 
 /* CSS FOR FOOTER ETC 
@@ -267,6 +267,36 @@ function countdown() {
 
 */
 
+
+#countdown, #instr {
+    display: block;
+    font-family: 'Lato';
+    font-size: 38px;
+    color:darkblue;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-underline-offset: 2px;
+    width: 400px;
+
+}
+
+#timer, #stop {
+    display: block;
+    margin: 0 auto;
+    height: 53px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 35px;
+    color:darkblue;
+    border: .25rem solid cornflowerblue;
+    border-radius: 1rem;
+    width: 450px;
+}
+
+#weight { 
+    height:50px; 
+    font-size: 40px;
+}
 #navigation {
     background-color: bisque;
     height: 220px;

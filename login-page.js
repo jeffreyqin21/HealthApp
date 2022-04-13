@@ -2,7 +2,7 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 const key = document.getElementById("keyboard");
-const clickOut = document.getElementById("notLogin");
+const clickOut = document.getElementById("header");
 
 key.style.display = "none";
 
@@ -16,8 +16,7 @@ loginButton.addEventListener("click", (e) => {
             localStorage.setItem('name', "Bob")
         else 
             localStorage.setItem('name', "Sally")
-        console.log("succ")
-        window.location = './home.html';
+       window.location = './home.html';
 
     } else {
         loginErrorMsg.style.opacity = 1;

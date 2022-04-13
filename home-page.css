@@ -1,9 +1,3 @@
-@media screen and (max-width: 667px) {
-    .view {
-        width: 375px;
-    }
-}
-
 @font-face {
     font-family: 'Lato';
     src: url('./fonts/Lato-Regular.ttf');
@@ -49,13 +43,8 @@ body {
 
 
 
-h1 {
-    font-family: 'Lato';
-    display: flex;
-    justify-content: center;
-    align-items: center;
    
-}
+
 h2 {
   margin-top: 3rem;
   font-family: 'Lato';
@@ -86,47 +75,25 @@ button{
 
 }
 
-
-  
-.container {
-    height: 200px;
-    position: relative;
-    border: 3px solid green;
-  }
-  
-  .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-
-.center {
-    position:absolute;
-    bottom:0px;
-    
-}
-
 #navigation {
-    background-color: bisque;
-    height: 220px;
-    border-bottom-right-radius: 4rem;
-    border-bottom-left-radius: 4rem;
-    margin-bottom: -2rem;
-    padding-top: .35rem;
-    padding-bottom: .35rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display:block;
+  background-color: bisque;
+  height: 220px;
+  border-bottom-right-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  margin-bottom: -2rem;
+  padding-top: .35rem;
+  padding-bottom: .35rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display:block;
 }
-    #home, #diet, #exercise, #slumber {
-        margin-left: 33px;
-        height:170px;
-        padding:1rem;
-    }
-    #home{
-        background-color: rgb(240, 214, 183);
-    }
+#home, #diet, #exercise, #slumber {
+  margin-left: 33px;
+  height:170px;
+  padding:1rem;
+}
+/* update this based on which icon you want to darken for the page */
+#home{
+  background-color: rgb(240, 214, 183);
+}

@@ -1,22 +1,18 @@
-
-const dietClick = document.getElementById("dietClick");
-const exerciseClick = document.getElementById("exerciseClick");
-const slumberClick = document.getElementById("slumberClick");
-const homeClick = document.getElementById("homeClick");
 const quote = document.getElementById("quote");
 const newQuote = document.getElementById("newQuote");
 const fact = document.getElementById("fact");
 const newFact = document.getElementById("newFact");
 const timer = document.getElementById("gameStart");
 const nameTag = document.getElementById("pump");
+const fillWork = document.getElementById("myProgress")
 var now = new Date();
 
 if(now.getHours() < 12)
-    nameTag.innerHTML = ("Good Morning, ") + localStorage.getItem('name') 
-if(now.getHours() > 12 && now.getHours() <= 17)
-    nameTag.innerHTML = ("Good Afternoon, ") + localStorage.getItem('name')
-if(now.getHours() >= 18)
-    nameTag.innerHTML = ("Good Evening, ") + localStorage.getItem('name')
+    nameTag.innerHTML = ("Good Morning, ") + localStorage.getItem("name")
+if(now.getHours() >= 12 && now.getHours() <= 17)
+    nameTag.innerHTML = ("Good Afternoon, ") +  localStorage.getItem("name")
+if(now.getHours >= 18 )
+    nameTag.innerHTML = ("Good Evening, ") +  localStorage.getItem("name")
 
 
 
@@ -101,8 +97,10 @@ document.getElementById("gameStart").addEventListener("click", function(){
     }
     }, 1000);
 
-    console.log(countdown);
 });
 
-
+document.getElementById("finishWorkout").addEventListener("click", (e) => {
+    
+    fillWork.innerHTML = localStorage.getItem("name") + " completed their workout!"
+})
 
