@@ -94,6 +94,5 @@ document.getElementById("gameStart").addEventListener("click", function(){
     }
     }, 1000);
 
-    console.log(countdown);
 });
 
