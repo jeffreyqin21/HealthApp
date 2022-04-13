@@ -129,14 +129,6 @@
               );
               </script>
 
-<div class="center">
-               
-  <img src="icons/home.png"  id = "homeClick" width="95" height="95">
-  <img src="icons/diet.png" id = "dietClick" width="95" height="95">
-  <img src="icons/exercise.png"  id = "exerciseClick" width="95" height="95">
-  <img src="icons/slumberCurrent.png" id = "slumberClick" width="95" height="95">
-
-</div>
               <form>
                 <div class = "slide">
                   <div id="slider">
@@ -163,6 +155,7 @@
                         
             <form>
               <div class="txt" align="center">
+                <!--start as empty text and then js inputs value depending on button clicked-->
                 <h2 id= "advice"></h3>
                </div>
             </form>
@@ -171,6 +164,14 @@
 
    
 </body>
+
+<div id="navigation">
+  <img onclick="window.location.replace('home.html')" id="home" src="smart-house.png" alt="home" >
+  <img onclick="window.location.replace('diet.html')" id="diet" src="food.png" alt="home">
+  <img onclick="window.location.replace('exercise.html')" id="exercise" src="gym.png" alt="home">
+  <img onclick="window.location.replace('slumber.html')" id="slumber" src="bed.png" alt="home">
+
+</div>
 
 </html>
 
