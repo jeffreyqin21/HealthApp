@@ -1,29 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-1scale=1.0">
     <title>Diet</title>
-    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="diet-page.css">
     <script defer src="diet-page.js"></script>
 </head>
 
+
+
 <body>
-    <main id="main-holder">
-        <h1 id="login-header">Diet page!</h1>
-        <body>
-            <div class="center">
-               
-                <img src="icons/home.png"  id = "homeClick" width="100" height="100">
-                <img src="icons/dietCurrent.png" id = "dietClick" width="100" height="100">
-                <img src="icons/exercise.png"  id = "exerciseClick" width="100" height="100">
-                <img src="icons/slumber.png" id = "slumberClick" width="100" height="100">
-                
+    <div id="header">
+        <h2 id="date">Diet</h2>
+        <h1 id="focus"></h1> 
+    </div>
 
-            </div>
-        </body>
+    <main class = "bar">
+        <section id = "calories">
+            <article class="calories">
+                <div>
+                    <p>Total Calories Ate Today: <span></span><span class ="calories"></p>
+                </div>
+                <div>
+                    <p>Total Grams of Carbohydrates: <span></span><span class ="calories"></p>
+                </div>
+                <div>
+                    <p>Total Grams of Protein: <span></span><span class ="calories"></p>
+                </div>
+                <div>
+                    <p>Total Grams of Fat: <span></span><span class ="calories"></p>
+                </div>
+            </article>
+        </section>
+    </main>
 
+    <script>
+        function myFunction(){
+            var tbl = document.getElementById("total-intake");
+            var row = tbl.insertRow();
+            var cell1 = row.insertCell();
+            var cell2 = row.insertCell();
+
+            cell1.innerHTML = document.getElementById("name").value;
+            cell2.innerHTML = document.getElementById("cal").value;
+        }
+
+    </script>
+
+    <script type="text/Javascript">
+    
+        function drawOne(a, n) {
+            // draws the rectangle for one of the values
+            // a is a counter for the column
+            // n is the value being graphed
+            con.fillStyle = 'red';
+            con.fillRect(500 + 60 * a, 400, 40, -n);
+            // write the value below the column
+            con.strokeText(n, 500 + 40 * a, 440);
+        }
+    </script>
+    
+
+    <div class = "foodinput">
+        <br>
+        <form onsubmit="myFunction(); return false;" required  >
+            <input type = "text" id = "name" placeholder="Enter the Food" required/> <br/>
+            <input type = "number" id = "cal" min = 1 placeholder="Calorie Count?" required/><br/> 
+            <input type= "submit" value = "Submit"  />
+            
+        </form> 
+        <br>
+    </div>
+
+    <div class = "mealplan">
+        <p> Daily Meal Tracker </p>
+        <table style= "width: 100%" id = "total-intake">
+            <tr>
+                <td> Food </td>
+                <td> Calories </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <main class = "main-holder"> 
+
+        <p id ="quote-header">Today's meal suggestion: </p>
+        <p id = "meal"> </p>
+        
+        <button type = "button" id = "newMeal"> New suggestion</button> 
+        <button type = "button" id = "addMeal"> Add meal</button>
 
     </main>
+
+    <div class = "center_bottom">
+        
+        <img src="icons/home.png"  id = "homeClick" width="85" height="85">
+        <img src="icons/dietCurrent.png" id = "dietClick" width="85" height="85">
+        <img src="icons/exercise.png"  id = "exerciseClick" width="85" height="85">
+        <img src="icons/slumber.png" id = "slumberClick" width="85" height="85">
+                
+    </div>
+ 
 </body>
 
 </html>

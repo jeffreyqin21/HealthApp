@@ -1,0 +1,193 @@
+@media screen and (max-width: 667px) {
+    .view {
+        width: 375px;
+    }
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('/fonts/Lato-Light.ttf');
+}
+
+body {
+  overflow-y: none;
+  width: 96%;
+  background-color: rgb(233, 231, 231);
+}
+
+#header {
+    background-color: darkblue;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    border-top-right-radius:1rem;
+    border-top-left-radius: 1rem;
+
+}
+
+
+#date {
+    font-family: 'Lato-Light';
+    font-size: 40px;
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: beige;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+    padding-top: 0rem;
+}
+
+
+
+section article.calories{
+    height: auto;
+}
+
+section article.calories p{
+    color: #ffffff;
+    padding: 0px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section article.calories div span:nth-child(1){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #0f3460;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+section article.calories div span:nth-child(2){
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #e94560;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+section article.calories div:nth-child(1) span:nth-child(2){
+    width: 100%;
+    animation-delay: 0;
+}
+
+section article.calories div:nth-child(2) span:nth-child(2){
+    width: 90%;
+    animation-delay: 0;
+}
+
+section article.calories div:nth-child(3) span:nth-child(2){
+    width: 60%;
+    animation-delay: 0;
+}
+
+section article.calories div:nth-child(4) span:nth-child(2){
+    width: 20%;
+    animation-delay: 0;
+}
+
+.bar{
+    border: #0f3460;
+    border-block-color: #0f3460;
+}
+
+.main-holder{
+    position: absolute;
+    left: 2%;
+    top: 55.5%;
+    border-color: #e94560;
+    border-width: 0.5px;
+    border-radius: 1px;
+    border-style: solid;
+    margin: auto;
+    z-index: -1;
+    height: 25%;
+    width: 49%;
+}
+
+
+.center_bottom{
+    position: fixed;
+    bottom: 0;
+
+    margin: auto;
+    width: 100%;
+    border: 1px solid #5d0fe3;
+    padding: 10px;
+    left: 0;
+    right: 0;
+}
+
+.mealplan p{
+    left: 90%;
+}
+
+.mealplan{
+    position: absolute;
+    left: 52.5%;
+    top: 39%;
+    border-color: #e94560;
+    border-width: 0.5px;
+    border-radius: 3px;
+    border-style: solid;
+    margin: auto;
+    z-index: -1;
+    height: 41.5%;
+    width: 45.2%;
+}
+
+.foodinput{
+    position: absolute;
+    left: 2%;
+    top: 39%;
+    border-color: #e94560;
+    border-width: 0.5px;
+    border-radius: 3px;
+    border-style: solid;
+    margin: auto;
+    height: 15%;
+    width: 49%;
+}
+
+#addMeal{
+    border-radius: 50%;
+    height: 50px;
+    width: 70px;
+   
+}
+
+#newMeal{
+    border-radius: 50%;
+    height: 50px;
+    width: 70px;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Lato-Bold';
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+h3{
+    font-family: 'Lato-Light';
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
