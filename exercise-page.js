@@ -16,14 +16,23 @@ function main () {
     document.querySelector("#finish").onclick = finish;
     document.querySelector("#backk").onclick = backk;
     document.querySelector("#back").onclick = back;
-    
+
     document.querySelector("#timer").onclick = start;
     document.querySelector("#stop").onclick = stop;
     document.querySelector("#weightC").onclick = graph;
     document.querySelector("#return").onclick = front;
+    document.querySelector("#sumLWB").onclick = closeKey;
+
 
 }
 
+function closeKey() {
+    document.getElementById("sumLW").style.display = "inline";
+    document.getElementById("sumLWT").style.display = "inline";
+    document.getElementById("keyboard").style.display = "block";
+
+
+}
 
 function graph() {
     document.getElementById("return").style.display = "block";
@@ -31,6 +40,8 @@ function graph() {
     document.getElementById("genBut").style.display = "none";
     document.getElementById("summary").style.display = "none";
     document.getElementById("header").style.display = "none";
+    document.getElementById("keyboard").style.display = "none";
+
 
 }
 
@@ -55,6 +66,8 @@ function generate() {
     document.getElementById("summary").style.display = "none";
     document.getElementById("form").style.display = "inline";
     document.getElementById("navigation").style.display = "none";
+    document.getElementById("keyboard").style.display = "none";
+
 
 }
 
@@ -63,6 +76,14 @@ function generate() {
         clearInterval(check);
         check = null;
         document.getElementById("timer").style.display = "block";
+    
+    
+    }
+
+    function stop2 () {
+        document.getElementById("countdown").innerHTML = ""
+        clearInterval(check);
+        check = null;
     
     
     }
@@ -104,7 +125,7 @@ function back() {
     document.getElementById("instr").style.display = "none";
     document.getElementById("countdown").style.display = "none";
     document.getElementById("stop").style.display = "none";
-    
+    stop2();
 
 }
 

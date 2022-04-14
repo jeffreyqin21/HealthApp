@@ -45,7 +45,7 @@
 
 
 #doggo {
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 #pump {
@@ -168,7 +168,7 @@ select {
 
 }
 #focsel {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 #w1 {
@@ -200,6 +200,10 @@ select {
     width: 450px;
 
 }
+#keyboard {
+    display: none;
+}
+
 
 #return {
     font-family: 'Lato-Light';
@@ -215,7 +219,7 @@ select {
 
 }
 
-#weightC {
+#weightC, #sumLWB {
     margin: 0 auto;
     margin-top: 2rem;
     height: 53px;
@@ -300,6 +304,7 @@ input[type=checkbox]{
     font-size: 40px;
     color:cornflowerblue;
     vertical-align: middle;
+    display: none;
 }
 
 #countdown {
@@ -345,9 +350,12 @@ input[type=checkbox]{
 
 
 
-#weight { 
-    height:50px; 
+#sumLWT { 
+    font-family: 'Lato';
     font-size: 40px;
+    color:cornflowerblue;
+    vertical-align: middle;
+    display: none;
 }
 #navigation {
     background-color: bisque;
