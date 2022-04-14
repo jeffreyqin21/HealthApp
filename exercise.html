@@ -10,6 +10,70 @@
     <script src="exercise-page.js" defer></script>
 </head>
 
+<div id="graph">
+    <canvas id="myChart">
+        <script type="text/javascript" src="./chart.min.js"> </script>
+        <script>
+            const labels = [
+              'January',
+              'February',
+              'March',
+              'April',
+              'May',
+              'June',
+            ];
+
+            const data = {
+              labels: labels,
+              datasets: [{
+                label: 'My weight progress',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [130, 128, 128, 127, 125, 124, 124],
+              }]
+            };
+
+            const config = {
+              type: 'line',
+              data: data,
+              options: {
+                scales: {
+                    xAxes: {
+                      title: {
+                        display: true,
+                        text: 'Month',
+                        font: {
+                            size: 15
+                        }
+                      }
+                    },
+                    yAxes: {
+                      title: {
+                      display: true,
+                      text: 'Weight in Pounds',
+                      font: {
+                            size: 15
+                        }
+                      }
+                    },
+                  }
+              }
+            };
+          </script>
+          <script>
+            const myChart = new Chart(
+              document.getElementById('myChart'),
+              config
+            );
+          </script>
+
+    </canvas>
+    <input id="return" type="button" value="Back" /> 
+
+</div>
+
+
+
 <body>
     <div id="header">
     <h1 id="pump">Get Active!</h1>
@@ -67,8 +131,9 @@
         <br>
         <label id="sumLW">Input Current Weight</label>
         <br>
-        <input required type="text" size="5" id="weight" name="weight" maxlength="3"><label id="sumLW"> lbs</label>
-
+        <input type="text" name="weight" id = "weight" size="4" id="sumLW"> <label id="sumLW"> lbs</label>
+        <br>
+        <input id="weightC" type="button" value="See Progress" /> 
         
     </fieldset> 	                       
        </div>
@@ -89,11 +154,10 @@
             <h4 id="r4">REST</h4>
             <br>
             <br>
-            <h3 id= "instr">Use the timer below to time your rest or timed exercises. </h3>
-        <button type = "button" id = "timer">Start 60sec Timer</button>
-        <h3 id= "countdown"></h3>
-        <button type = "button" id = "stop">Reset Timer</button>
-
+                <h3 id= "instr">Use the timer below to time your rest or timed exercises. </h3>
+                <button type = "button" id = "timer">Start 60sec Timer</button>
+                <h3 id= "countdown"></h3>
+                <button type = "button" id = "stop">Reset Timer</button>
             <br>
             <br>
             <br>

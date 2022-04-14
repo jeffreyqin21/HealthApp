@@ -13,9 +13,9 @@ function main () {
 
 function flow () {
     if(document.getElementById("level1").checked)
-        document.getElementById("advice").innerHTML = "Try sleeping earlier than usual and take melatonin.";
+        document.getElementById("advice").innerHTML = "Get in bed earlier than usual and take melatonin. Practice counting to 100 to clear all thoughts.";
     if(document.getElementById("level2").checked)
-        document.getElementById("advice").innerHTML = "Nice! Try and put your phone away before getting into bed.";
+        document.getElementById("advice").innerHTML = "Nice but try putting your phone away before getting into bed.";
     if(document.getElementById("level3").checked)
         document.getElementById("advice").innerHTML = "Great job! Keep up the sleep.";
     

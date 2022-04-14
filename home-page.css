@@ -60,10 +60,11 @@ h3 {
   text-align: center;
   height: 50px;
 }
+
 button{
     display: inline;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: .25rem;
     height: 53px;
     text-align: center;
     font-family: 'Lato-Light';
@@ -72,6 +73,43 @@ button{
     border: .25rem solid cornflowerblue;
     border-radius: 1rem;
     width: 450px;
+
+}
+#finishworkout {
+  display: block;
+  height: 40px;
+  font-family: 'Lato-Light';
+  font-size: 30px;
+  color:darkblue;
+  border: .25rem solid cornflowerblue;
+  border-radius: 1rem;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+
+}
+
+#peers {
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+  margin-right: 20rem;
+}
+
+#friend-header {
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  font-family: 'Lato';
+  font-size: 30px;
+}
+
+ #friendProgress, #myProgress{
+  text-align: left;
+  margin-left: 30px;
+  font-family: 'Lato';
+  font-size: 25px;
+  color: cornflowerblue;
+  margin-bottom: 0px;
 
 }
 

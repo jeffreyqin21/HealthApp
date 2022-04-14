@@ -100,7 +100,6 @@ document.getElementById("gameStart").addEventListener("click", function(){
 });
 
 document.getElementById("finishWorkout").addEventListener("click", (e) => {
-    
     fillWork.innerHTML = localStorage.getItem("name") + " completed their workout!"
 })
 
