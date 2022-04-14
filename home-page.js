@@ -5,13 +5,13 @@ const newFact = document.getElementById("newFact");
 const timer = document.getElementById("gameStart");
 const nameTag = document.getElementById("pump");
 const fillWork = document.getElementById("myProgress")
-var now = new Date();
 
+var now = new Date();
 if(now.getHours() < 12)
     nameTag.innerHTML = ("Good Morning, ") + localStorage.getItem("name")
 if(now.getHours() >= 12 && now.getHours() <= 17)
     nameTag.innerHTML = ("Good Afternoon, ") +  localStorage.getItem("name")
-if(now.getHours >= 18 )
+if(now.getHours() >= 18 )
     nameTag.innerHTML = ("Good Evening, ") +  localStorage.getItem("name")
 
 

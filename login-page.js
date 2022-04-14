@@ -5,7 +5,7 @@ const key = document.getElementById("keyboard");
 const clickOut = document.getElementById("header");
 
 key.style.display = "none";
-
+loginErrorMsg.style.opacity = 0;
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;

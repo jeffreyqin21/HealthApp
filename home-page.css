@@ -95,23 +95,9 @@ button{
   margin-right: 20rem;
 }
 
-#friend-header {
-  text-align: left;
-  margin-left: 20px;
-  margin-bottom: 0px;
-  font-family: 'Lato';
-  font-size: 30px;
-}
 
- #friendProgress, #myProgress{
-  text-align: left;
-  margin-left: 30px;
-  font-family: 'Lato';
-  font-size: 25px;
-  color: cornflowerblue;
-  margin-bottom: 0px;
 
-}
+
 
 #navigation {
   background-color: bisque;
