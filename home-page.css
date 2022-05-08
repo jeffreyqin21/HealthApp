@@ -14,7 +14,7 @@
 
 #pump {
     font-family: 'Lato';
-    font-size: 60px;
+    font-size: 70px;
     justify-content: center;
     display: flex;
     position: static;
@@ -48,14 +48,14 @@ body {
 h2 {
   margin-top: 3rem;
   font-family: 'Lato';
-  font-size: 40px;
+  font-size: 55px;
   color: darkblue;
   text-align: center;
 }
 
 h3 {
   font-family: 'Lato';
-  font-size: 40px;
+  font-size: 45px;
   color: cornflowerblue;
   text-align: center;
   height: 50px;
