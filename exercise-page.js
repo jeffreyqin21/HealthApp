@@ -29,7 +29,6 @@ function main () {
 function closeKey() {
     document.getElementById("sumLW").style.display = "inline";
     document.getElementById("sumLWT").style.display = "inline";
-    document.getElementById("keyboard").style.display = "block";
 
 
 }
@@ -203,7 +202,7 @@ function displayWork() {
     document.getElementById("timer").style.display = "block";
     document.getElementById("instr").style.display = "block";
     document.getElementById("countdown").style.display = "block";
-    document.getElementById("stop").style.display = "block";
+    document.getElementById("stop").style.display = "none";
 
     document.getElementById("w1").style.display = "block";
     document.getElementById("d1").style.display = "block";
@@ -258,13 +257,13 @@ function org(foc, level) {
     } else if (level == "Intermediate") {
         switch(foc) {
             case "Arms":
-                document.getElementById("w1").innerHTML = "Bicep Curls";
+                document.getElementById("w1").innerHTML = "Bicep Curls &#9432;";
                 document.getElementById("d1").innerHTML = "4 x 15";
-                document.getElementById("w2").innerHTML = "Tricep Pushdowns";
+                document.getElementById("w2").innerHTML = "Tricep Pushdowns &#9432;";
                 document.getElementById("d2").innerHTML = "4 x 15"; 
-                document.getElementById("w3").innerHTML = "Hammer Curls";
+                document.getElementById("w3").innerHTML = "Hammer Curls &#9432;";
                 document.getElementById("d3").innerHTML = "4 x 15"; 
-                document.getElementById("w4").innerHTML = "Lateral Raises";
+                document.getElementById("w4").innerHTML = "Lateral Raises &#9432;";
                 document.getElementById("d4").innerHTML = "4 x 15";    
                 break;
             case "Legs":
@@ -323,3 +322,16 @@ function org(foc, level) {
         } 
     }
 }
+
+
+/*
+
+<div id="summary">
+        <fieldset id="field">
+          <legend id= "checklist2"><strong>Weight Progress</strong></legend> 
+          <label id="sumLl">Input Current Weight</label>           <br>
+          <input type="text" name="weight" size="4" id="sumLW"> <label id="sumLWT"> lbs</label>
+          <br>
+          <input id="weightC" type="button" value="See Weight Progress" /> 
+      </div>
+*/

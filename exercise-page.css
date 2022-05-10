@@ -50,20 +50,21 @@
 
 #pump {
     font-family: 'Lato';
-    font-size: 60px;
+    font-size: 75px;
     justify-content: center;
     display: flex;
     position: static;
-    color: bisque;
+    color: white;
     padding-top: 4rem;
     margin-bottom: 1rem;
 }
 
 #date, #focus {
-    font-size: 35px;
-    color: bisque;
+    font-size: 45px;
+    color: white;
     text-align: center;
     margin-top: 0rem;
+    margin-bottom: 2rem;
     display: inline-block;
    
 }
@@ -120,7 +121,7 @@ select {
 }
 
 #genBut{
-    font-family: 'Lato-Light';
+    font-family: 'Lato';
     font-size: 45px;
     color:darkblue;
     border: .25rem solid cornflowerblue;
@@ -222,14 +223,15 @@ select {
 #weightC, #sumLWB {
     margin: 0 auto;
     margin-top: 2rem;
-    height: 53px;
+    height: 60px;
     text-align: center;
-    font-family: 'Lato-Light';
-    font-size: 35px;
+    font-family: 'Lato';
+    font-size: 38px;
     color:darkblue;
     border: .25rem solid cornflowerblue;
     border-radius: 1rem;
-    width: 350px;
+    padding: .25rem;
+    width: 375px;
 
 }
 
@@ -276,18 +278,26 @@ input[type=radio] {
 }
 
 #summary{
-    width:500px;
+    width:700px;
     margin: 0 auto;
     margin-top: 7rem;
-
+    
     justify-items: center;
     font-family: 'Lato';
     font-size: 40px;
 
 }
 
+#field {
+    border-style: solid;
+    border-color: darkblue;
+    border-width: .5rem;
+    
+}
+
 input[type=checkbox]{
     transform: scale(2.5);
+    
     margin-left: 2rem;
     margin-right: 1rem;
 }
@@ -295,14 +305,21 @@ input[type=checkbox]{
 #sumL {
     font-family: 'Lato';
     font-size: 50px;
-    color:cornflowerblue;
+    color:white;
     vertical-align: middle;
+}
+#sumLl {
+    font-family: 'Lato';
+    font-size: 45px;
+    color:white;
+    vertical-align: middle;
+    padding-bottom: 1rem;
 }
 
 #sumLW {
     font-family: 'Lato';
     font-size: 40px;
-    color:cornflowerblue;
+    color:white;
     vertical-align: middle;
     display: none;
 }
@@ -353,12 +370,11 @@ input[type=checkbox]{
 #sumLWT { 
     font-family: 'Lato';
     font-size: 40px;
-    color:cornflowerblue;
+    color:white;
     vertical-align: middle;
-    display: none;
 }
 #navigation {
-    background-color: bisque;
+    background-color: darkblue;
     height: 220px;
     border-bottom-right-radius: 4rem;
     border-bottom-left-radius: 4rem;
@@ -371,13 +387,13 @@ input[type=checkbox]{
     display:block;
 }
 #home, #diet, #exercise, #slumber {
-    margin-left: 33px;
+    margin-left: 20px;
     height:170px;
-    padding:1rem;
+    padding:.75rem;
 }
 /* update this based on which icon you want to darken for the page */
 #exercise{
-    background-color: rgb(240, 214, 183);
+    background-color: rgb(123, 123, 207);;
 }
 
 
@@ -386,12 +402,12 @@ input[type=checkbox]{
 body {
     overflow-y: none;
     width: 100%;
-    background-color: rgb(233, 231, 231);
+    background-color: rgb(161, 161, 208);;
   }
   
   
   #header {
-      background-color:rgb(11, 123, 234);
+      background-color:darkblue;
       height: 250px;
       border-top-right-radius: 4rem;
       border-top-left-radius: 4rem;
