@@ -19,22 +19,22 @@ body {
     width: 100%;
     background-color: rgb(233, 231, 231);
     text-align: center;
-  }
+}
 
 #pump {
     font-family: 'Lato';
-    font-size: 60px;
+    font-size: 75px;
     justify-content: center;
     display: flex;
     position: static;
-    color: bisque;
+    color: white;
     padding-top: 4rem;
     margin-bottom: 1rem;
 }
 
   
 #header {
-    background-color:rgb(11, 123, 234);
+    background-color:darkblue;
     height: 250px;
     border-top-right-radius: 4rem;
     border-top-left-radius: 4rem;
@@ -46,7 +46,7 @@ body {
 
 
 #navigation {
-    background-color: bisque;
+    background-color: darkblue;
     height: 220px;
     border-bottom-right-radius: 4rem;
     border-bottom-left-radius: 4rem;
@@ -65,9 +65,24 @@ body {
     padding:1rem;
 }
 
+body {
+    overflow-y: none;
+    width: 100%;
+    background-color: rgb(161, 161, 208);;
+  }
+  
+  
+  #header {
+      background-color:darkblue;
+      height: 250px;
+      border-top-right-radius: 4rem;
+      border-top-left-radius: 4rem;
+      margin-top: -2rem;
+      text-align: center;
+  }
 
 #slumber{
-    background-color: rgb(240, 214, 183);
+    background-color: rgb(123, 123, 207);
 }
 
 /* @media (max-width: 600px) {
@@ -89,7 +104,8 @@ h2.headertekst{
     font-family: 'Lato', sans-serif;
     display: flex;
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
+    color:darkblue;
 }
 
 #pic {
@@ -98,12 +114,12 @@ h2.headertekst{
 
 .slide {
     position:absolute;
-    bottom: 63%;
+    bottom: 62%;
     left: 3%;
     right:0;
     margin-right: auto; 
     margin-left: auto;
-    font-size: 30px;
+    font-size: 50px;
 }
 #slider div {
     display:none;
@@ -113,36 +129,43 @@ h2.headertekst{
     width: 100%;
 }
 #submit {
-    display: inline;
     margin: 0 auto;
-    height: 35px;
+    margin-top: 2rem;
+    height: 60px;
     text-align: center;
-    font-family: 'Lato-Light';
-    font-size: 20px;
+    font-family: 'Lato';
+    font-size: 38px;
     color:darkblue;
     border: .25rem solid cornflowerblue;
     border-radius: 1rem;
-    width: 175px;
-    align-items: center;
-    justify-content: center;
+    padding: .25rem;
+    width: 375px;
 }
+
 legend {
     margin-bottom: .5rem;
     color:darkblue;
     text-align: center;
-    font-size: 27.5px;
+    font-size: 35px;
 }
+
+legend2 {
+    margin-bottom: .5rem;
+    color:darkblue;
+    text-align: center;
+    font-size: 35px;
+}
+
 .red {
     font-family: 'Lato';
-    font-size: 27.5px;
-    color:cornflowerblue;
+    font-size: 30px;
+    color:darkblue;
     vertical-align: middle;
 }
 input[type=radio] {
     transform: scale(2.5);
     margin-left: 2rem;
-    margin-right: 0.6rem;
-    font-size: 27.5px;
+    margin-right: .6rem;
 }
 /*
 h1{
